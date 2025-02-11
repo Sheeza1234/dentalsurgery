@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+@font-face {
+  font-family: 'Abnes';
+  src: url('/fonts/abnes.woff2') format('woff2'),
+       url('/fonts/abnes.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Abnes';
+  src: url('/fonts/abnes.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Abnes';
+  src: url('/fonts/abnes.otf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Inters';
+  src: url('/fonts/Inter-Regular.otf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OptimaModoki';
+  src: url('/fonts/Optimamodoki-jEZGR.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter-Light-BETA.otf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OptimaModokiKhmer';
+  src: url('/fonts/OptimaModoki-Khmer.ttf.woff') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+/* Add this in your global styles or inside a <style> tag */
+@keyframes moveLogos {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.logo-container {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  animation: moveLogos 15s linear infinite;
+  /* Ensure the logos wrap infinitely */
+}
+
+.logo-wrapper {
+  display: flex;
+  flex-shrink: 0;
+  gap: 1rem;
+}
+
+.logo-container {
+  display: flex;
+  flex-wrap: nowrap;
+  animation: moveLogos 15s linear infinite;
+  gap: 1rem;
+}
+
+.logo-container img {
+  width: 150px; /* Adjust width of logos */
+  object-fit: contain;
+}
+
+.logo-wrapper {
+  display: flex;
+  gap: 2rem;
+}
+
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
