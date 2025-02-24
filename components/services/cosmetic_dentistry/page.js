@@ -80,7 +80,7 @@ export default function CosmeticDentistry() {
             <div className="logo-wrapper">
           {/* Duplicate the logos to create an infinite loop */}
           {[...logos, ...logos].map((src, index) => (
-            <img key={index} src={src} alt={`Logo ${index}`} className="w-auto h-12 sm:h-16 mx-4" />
+            <Image key={index} src={`/${src}`} alt={`Logo ${index}`} width={100} height={100} className="w-auto h-12 sm:h-16 mx-4" />
           ))}
           </div>
         </div>

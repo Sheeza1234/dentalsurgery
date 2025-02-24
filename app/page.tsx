@@ -1,7 +1,9 @@
 "use client"; 
 import Image from "next/image";
-import Welcome from "@/components/welcome";
-import Navbar from '../components/navbar/index'
+import Navbar from '../components/navbar/index';
+import dynamic from "next/dynamic";
+const Welcome = dynamic(() => import("../components/welcome/index"), { ssr: false });
+
 
 export default function CosmeticDentistry() {
   const logos = [
@@ -80,7 +82,7 @@ export default function CosmeticDentistry() {
             <div className="logo-wrapper">
           {/* Duplicate the logos to create an infinite loop */}
           {[...logos, ...logos].map((src, index) => (
-            <img key={index} src={src} alt={`Logo ${index}`} className="w-auto h-12 sm:h-16 mx-4" />
+            <Image key={index} src={`/${src}`} alt={`Logo ${index}`} width={150} height={150} className="w-auto h-12 sm:h-16 mx-4" />
           ))}
           </div>
         </div>

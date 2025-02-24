@@ -5,18 +5,18 @@ import HowWeHelp from "../works/index";
 
 export default function Welcome() {
   const [offset, setOffset] = useState(0);
-
+  
   useEffect(() => {
-    if (typeof window === "undefined") return; // Ensure it only runs on the client
-
-    const handleScroll = () => {
-      setOffset(window.scrollY);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    if (typeof window !== "undefined") {
+      const handleScroll = () => {
+        setOffset(window.scrollY);
+      };
+  
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
+    }
   }, []);
-
+  
 
   return (
     <div className=" bg-[#93D9E6] flex flex-col items-center overflow-hidden">
@@ -177,6 +177,7 @@ export default function Welcome() {
 
         </main>
       </div>
+
       <HowWeHelp />
     </div>
   );

@@ -1,7 +1,9 @@
 "use client";
 import Whyus from '../whyus/index';
-import MovingBar from '../movingbar/index';
 import { useRouter } from 'next/navigation';
+import dynamic from "next/dynamic";
+
+const MovingBar = dynamic(() => import("@/components/movingbar"), { ssr: false });
 
 export default function HowWeHelp() {
     const cards = [

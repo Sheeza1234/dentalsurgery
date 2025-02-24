@@ -38,7 +38,7 @@ export default function Navbar(){
                 { src: "/twitter.png", alt: "Twitter", link: "https://twitter.com" },
               ].map((item, index) => (
                 <a key={index} href={item.link} target="_blank" rel="noopener noreferrer">
-                  <img src={item.src} alt={item.alt} width="30" height="20" className="w-12 h-10 bg-white rounded-full shadow hover:bg-gray-100 transition" />
+                  <Image src={item.src} alt={item.alt} width="30" height="20" className="w-12 h-10 bg-white rounded-full shadow hover:bg-gray-100 transition" />
                 </a>
               ))}
             </div>

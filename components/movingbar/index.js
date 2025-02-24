@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function MovingBar() {
   const logos = [
     "medicare.png", "medi.png", "somno.png", "aust.png", "irisipum.png",
@@ -11,7 +12,7 @@ export default function MovingBar() {
       <div className="flex logo-container">
         <div className="logo-wrapper">
           {[...logos, ...logos].map((src, index) => (
-            <img key={index} src={src} alt={`Logo ${index}`} className="w-auto h-12 sm:h-16 mx-4" />
+            <Image key={index} src={`/${src}`} alt={`Logo ${index}`} width={100} height={100} className="w-auto h-12 sm:h-16 mx-4" />
           ))}
         </div>
       </div>

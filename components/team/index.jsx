@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Reviews from "../reviews/index";
 
 const MeetTheTeam = () => {
@@ -35,9 +36,11 @@ const MeetTheTeam = () => {
             >
               {/* Image Container */}
               <div className="w-40 h-40 rounded-full overflow-hidden mt-6">
-                <img
+                <Image
                   src={member.image}
                   alt={member.name}
+                  width={100}
+                  height={100}
                   className="w-full h-full object-cover"
                 />
               </div>
