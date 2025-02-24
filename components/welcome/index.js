@@ -7,18 +7,16 @@ export default function Welcome() {
   const [offset, setOffset] = useState(0);
 
   useEffect(() => {
-    // Ensure code only runs on client
-    if (typeof window !== "undefined") {
-      setWindowHeight(window.innerHeight); // Store window height on client
-      
-      const handleScroll = () => {
-        setOffset(window.scrollY);
-      };
+    if (typeof window === "undefined") return; // Ensure it only runs on the client
 
-      window.addEventListener("scroll", handleScroll);
-      return () => window.removeEventListener("scroll", handleScroll);
-    }
+    const handleScroll = () => {
+      setOffset(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
 
   return (
     <div className=" bg-[#93D9E6] flex flex-col items-center overflow-hidden">
