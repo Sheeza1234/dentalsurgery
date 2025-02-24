@@ -1,20 +1,20 @@
 "use client"; 
 import Image from "next/image";
 import Welcome from "@/components/welcome";
-import Navbar from '../components/navbar/index'
+import Navbar from '../../navbar/index';
 
 export default function CosmeticDentistry() {
   const logos = [
-    "medicare.png", "medi.png", "somno.png", "aust.png", "irisipum.png",
-    "DP.png", "DSD.png", "gIDE.png", "AOSTDS_logo_DHG.png", "Bupa.png",
-    "DIR-Logo-Dental-House.png", "HICAP.png", "SIRONA.png",
-    "Invisalign-Provider-in-Sunbury-Dental-Couture.png"
+    "/medicare.png", "/medi.png", "/somno.png", "/aust.png", "/irisipum.png",
+    "/DP.png", "/DSD.png", "/gIDE.png", "/AOSTDS_logo_DHG.png", "/Bupa.png",
+    "/DIR-Logo-Dental-House.png", "/HICAP.png", "/SIRONA.png",
+    "/Invisalign-Provider-in-Sunbury-Dental-Couture.png"
   ];
   return (
     <div>
       <div className="bg-[#C7EFFF] w-full h-full pt-[100px]">
 
-        {/* Top Header */}
+
 <Navbar/>
 
 
@@ -69,7 +69,7 @@ export default function CosmeticDentistry() {
 
             {/* Text Content */}
             <div className="text-center md:text-left mt-12 md:mt-48">
-              <h1 className="text-4xl md:text-6xl text-[#1C4C57] " style={{ fontFamily: 'Abnes, sans-serif' }}>G<span className="ml-2">ENTLE CARE</span></h1>
+              <h1 className="text-4xl md:text-6xl text-[#1C4C57] " style={{ fontFamily: 'Italianno, sans-serif' }}>G<span className="ml-2">ENTLE CARE</span></h1>
               <h1 className="text-4xl md:text-7xl text-[#1C4C57] mt-6">
                 Anxiety and pain <span className="text-[#EC95A4]">free</span> <br /> experience
               </h1>

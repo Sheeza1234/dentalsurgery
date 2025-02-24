@@ -1,5 +1,5 @@
 "use client";
-import ContactSection from '../contact/index'
+import ContactSection from "../contact/index";
 
 export default function CommunityGrid() {
   const locations = [
@@ -18,27 +18,35 @@ export default function CommunityGrid() {
 
   return (
     <div>
-    <div className="min-h-screen bg-[#1C4C57] flex flex-col items-center py-12">
-      {/* Header */}
-      <h1 style={{fontFamily:'Inter'}} className="text-[#C7EFFF] text-4xl font-semibold mb-16">
-        <span style={{ fontFamily: 'Abnes, sans-serif' }} className="text-3xl">MSDP</span> Servicing Local Community Since{" "}
-        <span className="font-bold">1942</span>
-      </h1>
-
-      {/* Grid Layout */}
-      <div className="grid grid-cols-3 md:grid-cols-4 gap-6 w-[1700px]  px-8">
-        {locations.flat().map((location, index) => (
-          <div
-            key={index}
-            style={{ fontFamily: "OptimaModoki, sans-serif" }}
-            className="bg-[#C7EFFF] text-[#1C4C57] text-2xl font-semibold py-3 rounded-full text-center shadow-md"
+      <div className="min-h-screen bg-[#1C4C57] flex flex-col items-center py-12 px-4">
+        {/* Header */}
+        <h1
+          style={{ fontFamily: "Inter" }}
+          className="text-[#C7EFFF] text-3xl sm:text-4xl font-semibold text-center mb-8 sm:mb-16"
+        >
+          <span
+            style={{ fontFamily: "Abnes, sans-serif" }}
+            className="text-2xl sm:text-5xl"
           >
-            {location}
-          </div>
-        ))}
+            MS<span className="ml-2"></span>DP
+          </span>{" "}
+          Servicing Local Community Since <span className="font-bold">1942</span>
+        </h1>
+
+        {/* Grid Layout */}
+        <div className="grid grid-cols-2  sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-2 sm:gap-4 w-full max-w-[1600px] ">
+          {locations.flat().map((location, index) => (
+            <div
+              key={index}
+              style={{ fontFamily: "OptimaModoki, sans-serif" }}
+              className="bg-[#C7EFFF] text-[#1C4C57] text-lg sm:text-xl md:text-xl font-semibold py-4 sm:py-5 w-full max-w-[250px] rounded-full text-center shadow-md"
+            >
+              {location}
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
-    <ContactSection/>
+      <ContactSection />
     </div>
   );
 }

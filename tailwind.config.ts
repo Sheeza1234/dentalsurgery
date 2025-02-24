@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -22,7 +23,9 @@ export default {
         OptimaModoki:['OptimaModoki','sans-serif'],
         Inter:['Inter','sans-serif'],
         Inters:['Inters','sans-serif'],
-        OptimaModokiKhmer:['OptimaModokiKhmer','sans-serif']
+        OptimaModokiKhmer:['OptimaModokiKhmer','sans-serif'],
+        Italianno:['Italianno','sans-serif']
+
 
 
       },
