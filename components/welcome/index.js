@@ -7,12 +7,17 @@ export default function Welcome() {
   const [offset, setOffset] = useState(0);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setOffset(window.scrollY);
-    };
+    // Ensure code only runs on client
+    if (typeof window !== "undefined") {
+      setWindowHeight(window.innerHeight); // Store window height on client
+      
+      const handleScroll = () => {
+        setOffset(window.scrollY);
+      };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
+    }
   }, []);
 
   return (
