@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Reviews from "../reviews/index";
+import RequestAppointment from "../appointment";
 
 const MeetTheTeam = () => {
   const teamMembers = [
@@ -55,7 +56,7 @@ const MeetTheTeam = () => {
       </div>
       
       {/* Reviews Section */}
-      <Reviews />
+      <Reviews CustomComponent={RequestAppointment} />
     </div>
   );
 };

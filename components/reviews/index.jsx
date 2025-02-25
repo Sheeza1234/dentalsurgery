@@ -1,6 +1,6 @@
 import RequestAppointment from "../appointment/index";
 
-const Reviews = () => {
+const Reviews = ({ CustomComponent }) => {
   const reviews = [
     { id: 1, stars: 5 },
     { id: 2, stars: 5 },
@@ -38,7 +38,7 @@ const Reviews = () => {
         </div>
       </div>
 
-      <RequestAppointment />
+      {CustomComponent && <CustomComponent />}
     </div>
   );
 };

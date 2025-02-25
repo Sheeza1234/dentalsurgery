@@ -6,12 +6,12 @@ import HowWeHelp from "../works/index";
 export default function Welcome() {
   const [offset, setOffset] = useState(0);
   
+  
   useEffect(() => {
     if (typeof window !== "undefined") {
       const handleScroll = () => {
         setOffset(window.scrollY);
       };
-  
       window.addEventListener("scroll", handleScroll);
       return () => window.removeEventListener("scroll", handleScroll);
     }
