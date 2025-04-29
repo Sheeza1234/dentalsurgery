@@ -4,16 +4,16 @@ export default function Footer() {
   return (
     <footer
       style={{ fontFamily: "OptimaModoki, sans-serif" }}
-      className="bg-[#1C4C57] text-white py-10 px-4 sm:px-6 lg:px-10"
+      className="bg-[#1C4C57] text-white py-10"
     >
-      <div className="max-w-screen-2xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+      <div className="container mx-auto grid gap-8 md:flex-row sm:justify-between sm:items-center sm:text-center px-6 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5">
         {/* Links */}
         <div>
-          <h3 className="font-bold text-3xl sm:text-4xl text-[#93D9E6] mb-6">Links</h3>
+          <h3 className="font-bold text-2xl  text-[#93D9E6] mb-6">Links</h3>
           <ul className="space-y-3">
             {["Home", "Our Practice", "Patient", "Sleep Dentistry", "Senior’s Dental Care", "Blog"].map((item) => (
               <li key={item}>
-                <a href="#" className="hover:text-[#93D9E6] text-base sm:text-lg md:text-lg">
+                <a href="#" className="hover:text-[#93D9E6] text-lg sm:text-md md:text-lg">
                   {item}
                 </a>
               </li>
@@ -23,7 +23,7 @@ export default function Footer() {
 
         {/* Services */}
         <div>
-          <h3 className="font-bold text-3xl sm:text-4xl mb-6 text-[#93D9E6]">Services</h3>
+          <h3 className="font-bold text-2xl mb-6 text-[#93D9E6]">Services</h3>
           <ul className="space-y-3">
             {[
               "Cosmetic Dentistry",
@@ -36,7 +36,7 @@ export default function Footer() {
               "More+",
             ].map((service) => (
               <li key={service}>
-                <a href="#" className="hover:text-[#93D9E6] text-base sm:text-lg md:text-xl">
+                <a href="#" className="hover:text-[#93D9E6] text-lg sm:text-md md:text-xl">
                   {service}
                 </a>
               </li>
@@ -46,11 +46,11 @@ export default function Footer() {
 
         {/* About */}
         <div>
-          <h3 className="font-bold text-3xl sm:text-4xl mb-6 text-[#93D9E6]">About</h3>
+          <h3 className="font-bold text-2xl mb-6 text-[#93D9E6]">About</h3>
           <ul className="space-y-3">
             {["Employment", "Team", "Contact", "ZipMoney", "Privacy Policy"].map((about) => (
               <li key={about}>
-                <a href="#" className="hover:text-[#93D9E6] text-base sm:text-lg md:text-xl">
+                <a href="#" className="hover:text-[#93D9E6] text-lg sm:text-md md:text-xl">
                   {about}
                 </a>
               </li>
@@ -60,36 +60,36 @@ export default function Footer() {
 
         {/* Contact */}
         <div>
-          <h3 className="font-bold text-3xl sm:text-4xl mb-6 text-[#93D9E6]">Contact</h3>
-          <p className="mb-3 hover:text-[#93D9E6] text-base sm:text-lg md:text-xl">Talk with an expert?</p>
-          <p className="mb-5 hover:text-[#93D9E6] text-base sm:text-lg md:text-xl">(03) 5367 5355</p>
-          <p className="text-base sm:text-lg md:text-xl">Send email enquiry</p>
-          <a href="mailto:admin@ebdg.com.au" className="hover:text-[#93D9E6] text-base sm:text-md md:text-xl break-words">
+          <h3 className="font-bold text-2xl mb-6 text-[#93D9E6]">Contact</h3>
+          <p className="mb-3 hover:text-[#93D9E6] text-lg sm:text-md md:text-md">Talk with an expert?</p>
+          <p className="mb-5 hover:text-[#93D9E6] text-lg sm:text-md md:text-md">(03) 5367 5355</p>
+          <p className="text-lg sm:text-lg md:text-xl">Send email enquiry</p>
+          <a href="mailto:admin@ebdg.com.au" className="hover:text-[#93D9E6] text-md sm:text-md md:text-xl">
             admin@mainstreetdental.com.au
           </a>
         </div>
 
         {/* Location */}
         <div>
-          <h3 className="font-bold text-3xl sm:text-4xl mb-6 text-[#93D9E6]">Location</h3>
-          <address className="not-italic mb-5 text-base sm:text-lg md:text-xl leading-relaxed">
+          <h3 className="font-bold text-2xl mb-6 text-[#93D9E6]">Location</h3>
+          <address className="not-italic mb-5 text-md sm:text-md">
             223 Main Street,
             <br />
             Bacchus Marsh Vic 3340
           </address>
-          <p className="text-base sm:text-lg md:text-xl">Monday – Friday 8am – 5pm</p>
-          <p className="text-base sm:text-lg md:text-xl">Saturday – Sleep Dentistry by Appointment Only</p>
-          <p className="text-base sm:text-lg md:text-xl">Sunday – Closed</p>
+          <p className="text-lg sm:text-md">Monday – Friday 8am – 5pm</p>
+          <p className="text-lg sm:text-md">Saturday – Sleep Dentistry by Appointment Only</p>
+          <p className="text-lg sm:text-md">Sunday – Closed</p>
         </div>
       </div>
 
       {/* Footer Bottom */}
-      <div className="max-w-screen-xl mx-auto mt-10 flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-4 px-2">
-        <p className="text-sm sm:text-base md:text-md">
+      <div className="container mx-auto px-6 mt-10 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+        <p className="text-base sm:text-md">
           © 2025 Main Street Dental Practice Bacchus Marsh All right Reserved.
         </p>
 
-        <p className="text-sm sm:text-base md:text-md">
+        <p className="text-base sm:text-md mt-4 md:mt-0">
           Web Design by <a href="#" className="hover:underline">Sheeza Asghar</a>
         </p>
       </div>
