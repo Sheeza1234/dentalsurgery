@@ -9,11 +9,7 @@ const MeetTheTeam = () => {
     { id: 3, name: "Member 3", image: "/images.png" },
     { id: 4, name: "Member 4", image: "/images.png" },
     { id: 5, name: "Member 5", image: "/images.png" },
-    { id: 6, name: "Member 6", image: "/images.png" },
-    { id: 7, name: "Member 7", image: "/images.png" },
-    { id: 8, name: "Member 8", image: "/images.png" },
-    { id: 9, name: "Member 9", image: "/images.png" },
-    { id: 10, name: "Member 10", image: "/images.png" },
+    { id: 6, name: "Member 6", image: "/images.png" }
   ];
 
   return (
@@ -29,14 +25,14 @@ const MeetTheTeam = () => {
         </h1>
 
         {/* Team Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 justify-center px-4 sm:px-8">
+        <div className="w-[1500px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-6 justify-center ml-64 px-4 sm:px-8">
           {teamMembers.map((member) => (
             <div
               key={member.id}
-              className="bg-[#1C4C57] rounded-2xl p-4 w-full max-w-[280px] h-auto flex flex-col items-center justify-between shadow-lg mx-auto"
+              className="bg-[#1C4C57] rounded-2xl p-4 w-full max-w-[380px] h-[400px] flex flex-col items-center justify-between shadow-lg mx-auto"
             >
               {/* Image Container */}
-              <div className="w-40 h-40 rounded-full overflow-hidden mt-6">
+              <div className="w-60 h-60 rounded-full overflow-hidden mt-6">
                 <Image
                   src={member.image}
                   alt={member.name}

@@ -4,7 +4,7 @@ import Achievements from '../achievements/index';
 export default function DentalPage() {
   const services = [
     { title: 'Get a Smile Makeover', image: '/A.png' },
-    { title: 'All on 4', image: '/B.png' },
+    { title: 'All on 4', image: '/allon4.png' },
     { title: 'Fill the Gap in My Smile', image: '/C.png' },
     { title: 'Treat My Toothache', image: '/D.png' },
     { title: 'Family Dentistry', image: '/E.png' },
@@ -53,7 +53,7 @@ export default function DentalPage() {
               <div className="absolute inset-0 bg-black bg-opacity-30"></div>
 
               {/* Colored Text Box at Bottom */}
-              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 mb-4 w-1/2 flex items-center justify-center bg-[#C7EFFF] bg-opacity-90 text-white text-center p-3">
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 rounded-lg mb-4 w-2/3 flex items-center justify-center bg-[#C7EFFF] bg-opacity-90 text-white text-center p-3">
                 <h2 className="font-semibold text-xl text-[#1C4C57] sm:text-lg">{service.title}</h2>
               </div>
 

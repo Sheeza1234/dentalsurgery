@@ -86,11 +86,11 @@ export default function Footer() {
       {/* Footer Bottom */}
       <div className="container mx-auto px-6 mt-10 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
         <p className="text-base sm:text-md">
-          © 2025 East Bentleigh Dental Group. All rights reserved.
+          © 2025 Main Street Dental Practice Bacchus Marsh All right Reserved.
         </p>
 
         <p className="text-base sm:text-md mt-4 md:mt-0">
-          Web Design by <a href="#" className="hover:underline">23 Digital</a>
+          Web Design by <a href="#" className="hover:underline">Sheeza Asghar</a>
         </p>
       </div>
     </footer>

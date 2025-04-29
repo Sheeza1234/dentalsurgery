@@ -7,21 +7,21 @@ const MovingBar = dynamic(() => import("@/components/movingbar"), { ssr: false }
 
 export default function HowWeHelp() {
     const cards = [
-        { title: 'Cosmetic Dentistry', image: '/d1.jpg',slug:'cosmetic_dentistry' },
-        { title: 'Dental Implants', image: '/d2.jpg',slug:'dental-implants' },
-        { title: 'Orthodontics', image: '/d3.jpg',slug:'orthodontics' },
-        { title: 'Dentures', image: '/d4.jpg',slug:'dentures' },
-        { title: 'Brxism TMJ and Injectables', image: '/doc4.png',slug:'brxism' },
-        { title: 'Children Dental Care', image: '/doc5.png',slug:'children-care' },
-        { title: 'Teeth Grinding', image: '/doc6.png',slug:'teeth-grinding' },
-        { title: 'Restorative Dentistry', image: '/doc7.png',slug:'restorative-dentisry' },
+        { title: 'Cosmetic Dentistry', image: '/cosmetic_densitry.png',slug:'cosmetic_dentistry' },
+        { title: 'Dental Implants', image: '/dental_implant.png',slug:'dental-implants' },
+        { title: 'Orthodontics', image: '/ortho.png',slug:'orthodontics' },
+        { title: 'Dentures', image: '/dentures.png',slug:'dentures' },
+        { title: 'Brxism TMJ and Injectables', image: '/insialign.png',slug:'brxism' },
+        { title: 'Children Dental Care', image: '/childrendental.png',slug:'children-care' },
+        { title: 'Teeth Grinding', image: '/teeth_grinding.png',slug:'teeth-grinding' },
+        { title: 'Restorative Dentistry', image: '/restoric_densitry.png',slug:'restorative-dentisry' },
         { title: 'Sleep Apnoea', image: '/doc8.png',slug:'sleep-apnoea' },
-        { title: 'Sleep Dentistry', image: '/doc9.png',slug:'sleep-dentisry' },
-        { title: 'Senior Dental Care', image: '/doc10.png',slug:'senior-dental' },
-        { title: 'Wisdom Teeth Extraction', image: '/doc11.png',slug:'wisdom-teeth' },
-        { title: 'Emergency Dentistry', image: '/doc12.png',slug:'emergency-dentisry' },
-        { title: 'Bad Breath', image: '/doc13.png',slug:'bad-breath' },
-        { title: 'General Dentistry', image: '/doc15.png',slug:'general-dentisry' }
+        { title: 'Sleep Dentistry', image: '/sleepapnea.png',slug:'sleep-dentisry' },
+        { title: 'Senior Dental Care', image: '/senior_dentalcare.png',slug:'senior-dental' },
+        { title: 'Wisdom Teeth Extraction', image: '/wisdom.png',slug:'wisdom-teeth' },
+        { title: 'Emergency Dentistry', image: '/emergency_care.png',slug:'emergency-dentisry' },
+        { title: 'Bad Breath', image: '/bad_breath.png',slug:'bad-breath' },
+        { title: 'General Dentistry', image: '/general_dentistry.png',slug:'general-dentisry' }
     ];
     const router=useRouter();
 
@@ -44,12 +44,12 @@ export default function HowWeHelp() {
                 </div>
 
                 {/* Cards Section */}
-                <div className="mt-12 w-full max-w-[2000px]">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                <div className="mt-12 w-full max-w-[1500px]">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                     {cards.map((service, index) => (
             <div
               key={index}
-              className="relative w-full h-96  overflow-hidden shadow-lg  text-white"
+              className="relative w-[350px] h-72  overflow-hidden shadow-lg  text-white"
               style={{ backgroundImage: `url(${service.image})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
               onClick={() => router.push(`/services/${service.slug}`)}
             >
@@ -70,7 +70,7 @@ export default function HowWeHelp() {
                 {/* View All Services Button */}
                 <div className="mt-12 flex justify-center w-full mb-12">
                     <button
-                        className="text-white text-2xl sm:text-3xl bg-[#1C4C57] py-3 px-6 rounded-md 
+                        className="text-white text-4xl sm:text-7xl bg-[#1C4C57] py-3 px-6 rounded-md 
                                    hover:bg-[#93D9E6] hover:text-[#1C4C57] transition duration-300"
                     >
                         View All Services

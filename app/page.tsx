@@ -33,10 +33,10 @@ export default function CosmeticDentistry() {
 
         {/* Team Hugging Image */}
         <Image
-          src="/hugging.png"
+          src="/gola.png"
           alt="Team hugging"
-          width={650}
-          height={700}
+          width={750}
+          height={900}
           className="relative rounded-full object-cover mt-6"
         />
       </div>
@@ -77,7 +77,7 @@ export default function CosmeticDentistry() {
               </h1>
 
               {/* Scrolling Logos */}
-              <div className="bg-[#C7EFFF] ml-4 h-[70px] p-2 w-[600px]  flex justify-center md:justify-start gap-8 mt-6 overflow-hidden">
+              <div className="bg-[#C7EFFF] ml-4 h-[70px] p-2 w-[780px]  flex justify-center md:justify-start gap-8 mt-6 overflow-hidden">
               <div className="flex logo-container">
             <div className="logo-wrapper">
           {/* Duplicate the logos to create an infinite loop */}
