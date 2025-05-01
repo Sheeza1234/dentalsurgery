@@ -32,7 +32,7 @@ const Achievements = () => {
         {/* Title */}
         <h1
           style={{ fontFamily: "OptimaModoki, sans-serif" }}
-          className="text-3xl sm:text-6xl font-semibold text-[#1C4C57] mb-6"
+          className="text-xl sm:text-3xl lg:text-7xl font-semibold text-[#1C4C57] mb-6"
         >
           MSDP DEDICATION TO ACHIEVE THE BEST
         </h1>
@@ -40,7 +40,7 @@ const Achievements = () => {
         {/* Description */}
         <p
           style={{ fontFamily: "OptimaModoki, sans-serif" }}
-          className="mt-6 sm:mt-12 text-lg sm:text-3xl max-w-[90%] sm:max-w-[80%] mx-auto"
+          className="mt-6 sm:mt-12 text-sm sm:text-md lg:text-3xl justify-center  max-w-[90%] mx-auto"
         >
           A radiant smile is meant to be shared, and seeing the possibilities is
           the first step in your cosmetic dental journey. Explore the
@@ -51,21 +51,26 @@ const Achievements = () => {
         </p>
 
         {/* Tabs */}
-        <div className="flex flex-wrap justify-center gap-4 sm:gap-8 mt-10 sm:mt-12">
-          {tabs.map((tab) => (
-            <button
-              key={tab}
-              style={{ fontFamily: "OptimaModoki, sans-serif" }}
-              className={`px-3 sm:px-4 py-2 border border-0 text-lg sm:text-2xl font-medium text-[#1C4C57] hover:text-white hover:bg-[#1C4C57] transition-all`}
-              onClick={() => setActiveTab(tab)}
-            >
-              {tab}
-            </button>
-          ))}
-        </div>
+        <div className="overflow-x-auto w-full">
+  <div className="flex gap-4 sm:gap-8 mt-10 sm:mt-12 px-4 justify-center min-w-max">
+    {tabs.map((tab) => (
+      <button
+        key={tab}
+        style={{ fontFamily: "OptimaModoki, sans-serif" }}
+        className={`flex-shrink-0 px-3 sm:px-4 py-2 border border-0 text-lg sm:text-2xl font-medium text-[#1C4C57] hover:text-white hover:bg-[#1C4C57] transition-all ${
+          activeTab === tab ? "bg-[#1C4C57] text-white" : ""
+        }`}
+        onClick={() => setActiveTab(tab)}
+      >
+        {tab}
+      </button>
+    ))}
+  </div>
+</div>
+
 
         {/* Grid Sections */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mt-8 sm:mt-12 px-4 sm:px-0">
+        <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 mt-8 sm:mt-12 px-4 sm:px-0">
           {filteredSections.map((section) => (
             <div key={section.id} className="flex flex-col gap-4 items-center">
               {/* Filled box */}

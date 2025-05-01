@@ -25,15 +25,15 @@ export default function Welcome() {
       </Head>
 
       {/* Welcome Section - Fixed for 2/3 of Screen */}
-      <div className="relative w-full h-[54vh] flex justify-center items-center overflow-hidden">
+      <div className="relative h-[54vh] flex justify-center items-center overflow-hidden">
         <h1
           style={{ fontFamily: "Abnes, sans-serif" }}
-          className={`mt-18 text-[#1C4C57] tracking-wide  uppercase inset-0 z-0 text-8xl relative transition-all duration-[9744000ms] ${offset > (window.innerHeight * 1) / 2 ? "opacity-0 scale-95" : "opacity-100 scale-100"
+          className={`mt-18 text-[#1C4C57] tracking-wide  uppercase inset-0 z-0 text-6xl sm:text-8xl relative transition-all duration-[9744000ms] ${offset > (window.innerHeight * 1) / 2 ? "opacity-0 scale-95" : "opacity-100 scale-100"
             }`}
         >
           Welcome
-          <span className="block ml-[450] mt-8 mb-6">To</span>
-          <span className="ml-[670]">MSDP</span>
+          <span className="block sm:ml-[450] mt-8 mb-6">To</span>
+          <span className="sm:ml-[670]">MSDP</span>
         </h1>
 
       </div>

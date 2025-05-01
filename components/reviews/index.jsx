@@ -14,21 +14,21 @@ const Reviews = ({ CustomComponent }) => {
         {/* Title */}
         <h1
           style={{ fontFamily: "OptimaModoki, sans-serif" }}
-          className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-semibold text-[#FFFFFF] mb-6 sm:mb-8"
+          className="text-2xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-semibold text-[#FFFFFF] mb-6 sm:mb-8"
         >
           Our Google & Facebook Reviews
         </h1>
 
         {/* Reviews Container */}
-        <div className="flex flex-wrap justify-center gap-6 sm:gap-10">
+        <div className="flex flex-wrap justify-center gap-2 sm:gap-10 ">
           {reviews.map((review) => (
             <div
               key={review.id}
-              className="bg-[#D9D9D9] w-full max-w-[350px] sm:max-w-[400px] h-40 sm:h-48 flex  justify-center rounded-lg shadow-lg"
+              className="bg-[#D9D9D9] max-w-[450px] sm:max-w-[800px] h-24 sm:h-56 flex  justify-center rounded-lg shadow-lg"
             >
               <div className="flex">
                 {Array.from({ length: review.stars }).map((_, index) => (
-                  <span key={index} className="text-[#F6C217] text-4xl sm:text-5xl">
+                  <span key={index} className="text-[#F6C217] text-2xl sm:text-5xl">
                     ★
                   </span>
                 ))}

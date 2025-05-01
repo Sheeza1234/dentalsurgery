@@ -5,11 +5,11 @@ export default function RequestAppointment() {
   return (
     <div>
       <div className="flex items-center justify-center bg-[#93D9E6] px-4">
-        <div className="bg-[#B6E5FD] rounded-3xl p-6 sm:p-10 w-full max-w-[800px] h-auto text-center shadow-lg mt-10 sm:mt-16 mb-10 sm:mb-16">
+        <div className="bg-[#B6E5FD] rounded-3xl p-6 sm:p-10  max-w-[800px] h-auto text-center shadow-lg mt-10 sm:mt-16 mb-10 sm:mb-16">
           {/* Title */}
           <h2
             style={{ fontFamily: "OptimaModoki, sans-serif" }}
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#1C4C57] font-semibold mt-4 sm:mt-8"
+            className="text-xl sm:text-4xl md:text-5xl lg:text-6xl text-[#1C4C57] font-semibold mt-4 sm:mt-8"
           >
             Request an Appointment
           </h2>

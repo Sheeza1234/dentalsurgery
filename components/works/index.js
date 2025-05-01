@@ -33,10 +33,10 @@ export default function HowWeHelp() {
                 className="bg-[#C7EFFF] min-h-screen flex flex-col items-center px-4 sm:px-8"
             >
                 <div className="text-center mt-8">
-                    <h1 className="text-4xl sm:text-6xl lg:text-8xl text-[#1C4C57] font-semibold">
+                    <h1 className="text-2xl sm:text-6xl lg:text-8xl text-[#1C4C57] font-semibold">
                         How We Can <span className="text-[#EC95A4]">Help?</span>
                     </h1>
-                    <p className="mt-6 text-lg sm:text-xl max-w-7xl mx-auto text-[#1C4C57]">
+                    <p className="mt-6 text-sm sm:text-xl max-w-7xl mx-auto text-[#1C4C57]">
                         Our MSDP provides comprehensive care to meet the needs of patients of all ages.
                         We offer a full range of services from routine check-ups to advanced treatments, ensuring
                         everyone leaves our clinic with a smile.
@@ -44,7 +44,7 @@ export default function HowWeHelp() {
                 </div>
 
                 {/* Cards Section */}
-                <div className="mt-12 w-full max-w-[1500px]">
+                <div className="mt-12 max-w-[1500px]">
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                     {cards.map((service, index) => (
             <div
@@ -70,7 +70,7 @@ export default function HowWeHelp() {
                 {/* View All Services Button */}
                 <div className="mt-12 flex justify-center w-full mb-12">
                     <button
-                        className="text-white text-4xl sm:text-7xl bg-[#1C4C57] py-3 px-6 rounded-md 
+                        className="text-white text-xl sm:text-7xl bg-[#1C4C57] py-3 px-6 rounded-md 
                                    hover:bg-[#93D9E6] hover:text-[#1C4C57] transition duration-300"
                     >
                         View All Services
