@@ -24,7 +24,6 @@ export default function CosmeticDentistry() {
         {/* Main Content */}
         <main className="flex flex-col px-4 md:px-12 mt-36">
           <div className="flex flex-col md:flex-row gap-8">
-            {/* Animated Circle */}
 
             {/* Animated Circle */}
       <div className="relative md:ml-36 md:mr-24 md:w-[620px] md:h-[640px] flex items-center justify-center">
@@ -35,9 +34,9 @@ export default function CosmeticDentistry() {
         <Image
           src="/gola.png"
           alt="Team hugging"
-          width={750}
-          height={900}
-          className="relative rounded-full object-cover mt-6"
+          width={1050}
+          height={1000}
+          className="relative rounded-full object-cover mt-16"
         />
       </div>
 
