@@ -70,7 +70,7 @@ export default function HowWeHelp() {
                 {/* View All Services Button */}
                 <div className="mt-12 flex justify-center w-full mb-12">
                     <button
-                        className="text-white text-xl sm:text-7xl bg-[#1C4C57] py-3 px-6 rounded-md 
+                        className="text-white text-xl sm:text-4xl bg-[#1C4C57] py-3 px-6 rounded-md 
                                    hover:bg-[#93D9E6] hover:text-[#1C4C57] transition duration-300"
                     >
                         View All Services
