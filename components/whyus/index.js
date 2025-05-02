@@ -40,7 +40,7 @@ export default function Whyus() {
             },
             {
               title: 'Flexible payment options to suit your needs',
-              text: 'Embark on a dental care journey like no other at our East Bentleigh dental clinic, with an expert team dedicated to ensuring your visit is comfortable and pain-free.',
+              text: 'Embark on a dental care journey like no other at our East Bacchus Marsh dental clinic, with an expert team dedicated to ensuring your visit is comfortable and pain-free.',
             },
             {
               title: 'A full range of professional dentistry services',
@@ -63,7 +63,7 @@ export default function Whyus() {
         </section>
 
         {/* Emergency Section */}
-        <section className="bg-[#1C4C57] rounded-3xl w-[600px] lg:max-w-screen-xl text-center py-10 mt-16 text-[#93D9E6] px-4">
+        <section className="w-full bg-[#1C4C57] rounded-3xl w-[900px] lg:max-w-screen-xl text-center py-10 mt-16 text-[#93D9E6] px-4">
           <h2
             style={{ fontFamily: 'Abnes, sans-serif' }}
             className="text-lg sm:text-2xl md:text-6xl font-bold break-words"

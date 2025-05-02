@@ -5,17 +5,28 @@ import HowWeHelp from "../works/index";
 
 export default function Welcome() {
   const [offset, setOffset] = useState(0);
+  const [windowHeight, setWindowHeight] = useState(0);
+
+useEffect(() => {
+  if (typeof window !== "undefined") {
+    setWindowHeight(window.innerHeight);
+  }
+}, []);
+
   
-  
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      const handleScroll = () => {
-        setOffset(window.scrollY);
-      };
-      window.addEventListener("scroll", handleScroll);
-      return () => window.removeEventListener("scroll", handleScroll);
-    }
-  }, []);
+useEffect(() => {
+  if (typeof window !== "undefined") {
+    const handleScroll = () => {
+      setOffset(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }
+}, []);
+
   
 
   return (
@@ -28,12 +39,12 @@ export default function Welcome() {
       <div className="relative h-[54vh] flex justify-center items-center overflow-hidden">
         <h1
           style={{ fontFamily: "Abnes, sans-serif" }}
-          className={`mt-18 text-[#1C4C57] tracking-wide  uppercase inset-0 z-0 text-6xl sm:text-8xl relative transition-all duration-[9744000ms] ${offset > (window.innerHeight * 1) / 2 ? "opacity-0 scale-95" : "opacity-100 scale-100"
-            }`}
+          className={`mt-18 text-[#1C4C57] tracking-wide  uppercase inset-0 z-0 text-6xl sm:text-8xl relative transition-all duration-[9744000ms] ${offset > windowHeight / 2 ? "opacity-0 scale-95" : "opacity-100 scale-100"}
+`}
         >
           Welcome
-          <span className="block sm:ml-[450] mt-8 mb-6">To</span>
-          <span className="sm:ml-[670]">MSDP</span>
+          <div className="block sm:ml-[450] mt-8 mb-6">To</div>
+          <div className="sm:ml-[670]">MSDP</div>
         </h1>
 
       </div>
@@ -143,7 +154,7 @@ export default function Welcome() {
 
       </div>
       <div>
-        <main className="mt-[-800]">
+        <main className="mt-[-900px]">
           <h2
             className="text-8xl text-[#1C4C57] text-center"
             style={{ fontFamily: "OptimaModoki, sans-serif" }}
