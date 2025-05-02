@@ -39,19 +39,19 @@ useEffect(() => {
       <div className="relative h-[54vh] flex justify-center items-center overflow-hidden">
         <h1
           style={{ fontFamily: "Abnes, sans-serif" }}
-          className={`mt-18 text-[#1C4C57] tracking-wide  uppercase inset-0 z-0 text-6xl sm:text-8xl relative transition-all duration-[9744000ms] ${offset > windowHeight / 2 ? "opacity-0 scale-95" : "opacity-100 scale-100"}
+          className={`mt-24 text-[#1C4C57] tracking-wide  uppercase inset-0 z-0 text-8xl sm:text-8xl relative transition-all duration-[9744000ms] ${offset > windowHeight / 2 ? "opacity-0 scale-95" : "opacity-100 scale-100"}
 `}
         >
           Welcome
-          <div className="block sm:ml-[450] mt-8 mb-6">To</div>
-          <div className="sm:ml-[670]">MSDP</div>
+          <div className="block sm:ml-[450px] mt-16 mb-6">To</div>
+          <div className="sm:ml-[670px] mt-16">MSDP</div>
         </h1>
 
       </div>
 
 
       <div
-        className="w-[80%] mt-72 ml-72 overflow-hidden transition-transform duration-[4000ms] ease-out"
+        className="w-[90%] mt-72 ml-72 overflow-hidden transition-transform duration-[4000ms] ease-out"
         style={{
           transform: `translateY(-${offset * 1.2}px)`, // 1.2 controls speed; adjust as needed
         }}
@@ -154,7 +154,7 @@ useEffect(() => {
 
       </div>
       <div>
-        <main className="mt-[-900px]">
+        <main className="mt-[-800px]">
           <h2
             className="text-8xl text-[#1C4C57] text-center"
             style={{ fontFamily: "OptimaModoki, sans-serif" }}
@@ -164,7 +164,7 @@ useEffect(() => {
           </h2>
 
           <p
-            className="mt-6 w-[80%] text-4xl text-[#1C4C57] mx-auto text-center"
+            className="mt-16 w-[90%] text-4xl text-[#1C4C57] mx-auto text-center"
             style={{ fontFamily: "OptimaModoki, sans-serif" }}
           >
             Main Street Dental Practice is one of the oldest dental practices in{" "}
@@ -177,10 +177,10 @@ useEffect(() => {
             surgery, continuing its tradition of exceptional dental services.
           </p>
 
-          <div className="flex justify-center mt-10 mb-24">
+          <div className="flex justify-center mt-24 ">
             <button
               style={{ fontFamily: "OptimaModoki, sans-serif" }}
-              className="text-[#EC95A4] h-24 text-3xl bg-[#1C4C57] py-2 px-6 rounded-md hover:bg-[#C7EFFF] hover:text-[#1C4C57] transition"
+              className="text-[#EC95A4] h-24 text-4xl bg-[#1C4C57] py-2 px-6 rounded-md hover:bg-[#C7EFFF] hover:text-[#1C4C57] transition"
             >
               Request an Appointment
             </button>
