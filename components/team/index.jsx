@@ -4,12 +4,12 @@ import RequestAppointment from "../appointment";
 
 const MeetTheTeam = () => {
   const teamMembers = [
-    { id: 1, name: "Member 1", image: "/images.png" },
-    { id: 2, name: "Member 2", image: "/images.png" },
-    { id: 3, name: "Member 3", image: "/images.png" },
-    { id: 4, name: "Member 4", image: "/images.png" },
-    { id: 5, name: "Member 5", image: "/images.png" },
-    { id: 6, name: "Member 6", image: "/images.png" }
+    { id: 1, name: "Dr Saba", image: "/images.png" },
+    { id: 2, name: "Bill", image: "/images.png" },
+    { id: 3, name: "Bryan", image: "/images.png" },
+    { id: 4, name: "Mark", image: "/images.png" },
+    { id: 5, name: "Alarna", image: "/images.png" },
+    { id: 6, name: "Mansoora", image: "/images.png" }
   ];
 
   return (
