@@ -6,7 +6,7 @@ export default function DentalPage() {
     { title: 'Get a Smile Makeover', image: '/smile_make.png' },
     { title: 'All on 4', image: '/allon4.png' },
     { title: 'Fill the Gap in My Smile', image: '/gap_in_smile.png' },
-    { title: 'Treat My Toothache', image: '/D.png' },
+    { title: 'Treat My Toothache', image: '/treat_my_tooth.png' },
     { title: 'Family Dentistry', image: '/E.png' },
     { title: 'Early Orthodontic Treatment', image: '/early_ortho.png' },
     { title: 'Treat My Tooth Discoloration', image: '/discolration.png' },
