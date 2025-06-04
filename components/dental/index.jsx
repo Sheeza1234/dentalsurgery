@@ -3,14 +3,14 @@ import Achievements from '../achievements/index';
 
 export default function DentalPage() {
   const services = [
-    { title: 'Get a Smile Makeover', image: '/smile_make.png' },
-    { title: 'All on 4', image: '/allon4.png' },
-    { title: 'Fill the Gap in My Smile', image: '/gap_in_smile.png' },
-    { title: 'Treat My Toothache', image: '/treat_my_tooth.png' },
-    { title: 'Family Dentistry', image: '/E.png' },
-    { title: 'Early Orthodontic Treatment', image: '/early_ortho.png' },
-    { title: 'Treat My Tooth Discoloration', image: '/discolration.png' },
-    { title: 'Dental Checkup and Clean', image: '/dentures.png' }
+    { title: 'Get a Smile Makeover', image: '/smile_make.jpg' },
+    { title: 'All on 4', image: '/allon4.jpg' },
+    { title: 'Fill the Gap in My Smile', image: '/gap_in_smile.jpg' },
+    { title: 'Treat My Toothache', image: '/treat_my_tooth.jpg' },
+    { title: 'Family Dentistry', image: '/E.jpg' },
+    { title: 'Early Orthodontic Treatment', image: '/early_ortho.jpg' },
+    { title: 'Treat My Tooth Discoloration', image: '/discolration.jpg' },
+    { title: 'Dental Checkup and Clean', image: '/dentures.jpg' }
   ];
 
   return (

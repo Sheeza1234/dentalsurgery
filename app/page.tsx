@@ -32,7 +32,7 @@ export default function CosmeticDentistry() {
 
         {/* Team Hugging Image */}
         <Image
-          src="/gola.png"
+          src="/gola.jpg"
           alt="Team hugging"
           width={1050}
           height={1000}
