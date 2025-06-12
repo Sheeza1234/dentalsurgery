@@ -7,9 +7,9 @@ export default function DentalPage() {
     { title: 'All on 4', image: '/allon4.jpg' },
     { title: 'Fill the Gap in My Smile', image: '/gap_in_smile.jpg' },
     { title: 'Treat My Toothache', image: '/treat_my_tooth.jpg' },
-    { title: 'Family Dentistry', image: '/E.jpg' },
+    { title: 'Family Dentistry', image: '/family_dentistry.jpg' },
     { title: 'Early Orthodontic Treatment', image: '/early_ortho.jpg' },
-    { title: 'Treat My Tooth Discoloration', image: '/discolration.jpg' },
+    { title: 'Treat My Tooth Discoloration', image: '/tooth_discolration.jpg' },
     { title: 'Dental Checkup and Clean', image: '/dentures.jpg' }
   ];
 

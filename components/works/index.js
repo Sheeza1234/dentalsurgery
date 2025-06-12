@@ -19,9 +19,9 @@ export default function HowWeHelp() {
         { title: 'Sleep Apnoea', image: '/sleepapnea.jpg',slug:'sleep-apnoea' },
         { title: 'Sleep Dentistry', image: '/sleep_dentistry.jpg',slug:'sleep-dentisry' },
         { title: 'Senior Dental Care', image: '/senior_dentalcare.jpg',slug:'senior-dental' },
-        { title: 'Wisdom Teeth Extraction', image: '/wisdom_teeth.jpg',slug:'wisdom-teeth' },
+        { title: 'Wisdom Teeth Extraction', image: '/wisdomteeth.jpg',slug:'wisdom-teeth' },
         { title: 'Emergency Dentistry', image: '/emergency_care.jpg',slug:'emergency-dentisry' },
-        { title: 'Bad Breath', image: '/wisdom.jpg',slug:'bad-breath' },
+        { title: 'Bad Breath', image: '/bad_breeth.jpg',slug:'bad-breath' },
         { title: 'General Dentistry', image: '/general_dentistry.jpg',slug:'general-dentisry' }
     ];
     const router=useRouter();
