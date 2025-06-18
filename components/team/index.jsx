@@ -4,12 +4,14 @@ import RequestAppointment from "../appointment";
 
 const MeetTheTeam = () => {
   const teamMembers = [
-    { id: 1, name: "Dr Saba", image: "/dr_saba.png" },
-    { id: 2, name: "Bill", image: "/images.png" },
-    { id: 3, name: "Bryan", image: "/images.png" },
-    { id: 4, name: "Mark", image: "/images.png" },
-    { id: 5, name: "Alarna", image: "/images.png" },
-    { id: 6, name: "Mansoora", image: "/images.png" }
+    { id: 1, name: "Dr Saba", image: "/dr_saba.jpg" },
+    { id: 2, name: "Alarna", image: "/alarna.jpg" },
+    { id: 3, name: "B", image: "/budha.jpg" },
+    { id: 4, name: "M", image: "/chitu.jpg" },
+    { id: 5, name: "A", image: "/chini.jpg" },
+    { id: 6, name: "M", image: "/mansoora.jpg" },
+     { id: 7, name: "A", image: "/kalu.jpg" },
+    { id: 8, name: "M", image: "/gori.jpg" }
   ];
 
   return (
@@ -25,17 +27,17 @@ const MeetTheTeam = () => {
         </h1>
 
         {/* Team Grid */}
-        <div className="items-center justify-between  grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-6 gap-6 px-4  max-w-[1800px] mx-auto">
+        <div className="items-center justify-between  grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-4 gap-6 px-4  max-w-[1700px] mx-auto">
           {teamMembers.map((member) => (
             <div
               key={member.id}
-              className="bg-[#1C4C57] rounded-2xl p-4 max-w-sm  mx-auto h-[300px] flex flex-col items-center justify-between shadow-lg"
+              className="bg-[#1C4C57] rounded-2xl p-4 max-w-sm  mx-auto h-[400px] flex flex-col items-center justify-between shadow-lg"
             >
               {/* Image Container */}
              <div className="flex flex-col items-center gap-4">
-  <div className="relative w-64 h-48 sm:w-64 sm:h-44">
+  <div className="relative w-96 h-64 sm:w-72 sm:h-44">
     {/* Blob Background */}
-   <div className="relative w-56 h-32 sm:w-56 sm:h-48 rounded-full bg-[#BFD4F2] overflow-hidden flex items-center justify-center">
+   <div className="relative w-84 h-32 sm:w-[268px] sm:h-[310px] rounded-full bg-[#BFD4F2] overflow-hidden flex items-center justify-center">
   <Image
     src={member.image}
     alt={member.name}
@@ -47,10 +49,11 @@ const MeetTheTeam = () => {
   </div>
 
   {/* Name */}
-  <div className="bg-[#C7EFFF] text-[#1C4C57] rounded-full px-4 py-2 sm:py-3 text-base sm:text-lg font-medium w-full text-center mt-4">
+ 
+</div>
+ <div className="bg-[#C7EFFF] text-[#1C4C57] rounded-full px-4 py-2 sm:py-3 text-base sm:text-lg font-medium w-full text-center mt-4">
     {member.name}
   </div>
-</div>
             </div>
           ))}
         </div>

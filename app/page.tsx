@@ -31,14 +31,15 @@ export default function CosmeticDentistry() {
         <div className="absolute bg-[#1C4C57] inset-0 rounded-full border-4 border-transparent animate-border-spin before:absolute before:inset-0 before:rounded-full before:border-4 before:border-[#1C4C57] before:animate-border-warp"></div>
 
         {/* Team Hugging Image */}
-        <Image
-          src="/gola.jpg"
-          alt="Team hugging"
-          width={1050}
-          height={1000}
-          className="relative rounded-full object-cover mt-16"
-        />
-      </div>
+         <Image
+    src=""
+    alt="Team hugging"
+    width={940}
+    height={640}
+    className="relative w-[780px] h-[680px] object-cover  mt-12"
+  />
+</div>
+
 
       <style>
         {`
