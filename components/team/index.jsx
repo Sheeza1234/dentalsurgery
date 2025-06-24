@@ -4,14 +4,11 @@ import RequestAppointment from "../appointment";
 
 const MeetTheTeam = () => {
   const teamMembers = [
-    { id: 1, name: "Dr Saba", image: "/dr_saba.jpg" },
-    { id: 2, name: "Alarna", image: "/alarna.jpg" },
-    { id: 3, name: "B", image: "/budha.jpg" },
-    { id: 4, name: "M", image: "/chitu.jpg" },
-    { id: 5, name: "A", image: "/chini.jpg" },
-    { id: 6, name: "M", image: "/mansoora.jpg" },
-     { id: 7, name: "A", image: "/kalu.jpg" },
-    { id: 8, name: "M", image: "/gori.jpg" }
+    { id: 1, name: "Dr Saba Farooq", image: "/Dr_Saba_Farooq.png" },
+    { id: 2, name: "Alarna Cirelli", image: "/Alarna_Cirelli.png" },
+    { id: 3, name: "Dr Bill Crawford", image: "/Dr_Bill_Crawford.png" },
+    { id: 6, name: "Mansoora Sohail", image: "/Mansoora_Sohail.png" },
+     { id: 7, name: "Mark Suniga", image: "/Mark_Suniga.png" },
   ];
 
   return (
