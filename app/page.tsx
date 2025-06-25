@@ -26,17 +26,17 @@ export default function CosmeticDentistry() {
           <div className="flex flex-col md:flex-row gap-8">
 
             {/* Animated Circle */}
-      <div className="relative md:ml-36 md:mr-24 md:w-[620px] md:h-[640px] flex items-center justify-center">
+      <div className="relative md:ml-36 md:mr-24 md:w-[620px] md:h-[640px] flex items-center justify-center rounded-full overflow-hidden">
         {/* Animated Border */}
         <div className="absolute bg-[#1C4C57] inset-0 rounded-full border-4 border-transparent animate-border-spin before:absolute before:inset-0 before:rounded-full before:border-4 before:border-[#1C4C57] before:animate-border-warp"></div>
 
         {/* Team Hugging Image */}
          <Image
-    src=""
+    src="/gola.png"
     alt="Team hugging"
     width={940}
     height={640}
-    className="relative w-[780px] h-[680px] object-cover  mt-12"
+    className="relative w-[680px] h-[720px] object-cover mr-48 mb-12 "
   />
 </div>
 
