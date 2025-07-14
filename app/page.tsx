@@ -6,12 +6,12 @@ const Welcome = dynamic(() => import("../components/welcome/index"), { ssr: fals
 
 
 export default function CosmeticDentistry() {
-  const logos = [
-    "medicare.png", "medi.png", "somno.png", "aust.png", "irisipum.png",
-    "DP.png", "DSD.png", "gIDE.png", "AOSTDS_logo_DHG.png", "Bupa.png",
-    "DIR-Logo-Dental-House.png", "HICAP.png", "SIRONA.png",
-    "Invisalign-Provider-in-Sunbury-Dental-Couture.png"
-  ];
+  // const logos = [
+  //   "medicare.png", "medi.png", "somno.png", "aust.png", "irisipum.png",
+  //   "DP.png", "DSD.png", "gIDE.png", "AOSTDS_logo_DHG.png", "Bupa.png",
+  //   "DIR-Logo-Dental-House.png", "HICAP.png", "SIRONA.png",
+  //   "Invisalign-Provider-in-Sunbury-Dental-Couture.png"
+  // ];
   return (
     <div>
       <div className="bg-[#C7EFFF] w-full h-full pt-[100px]">
