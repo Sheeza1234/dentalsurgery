@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Achievements from '../achievements/index';
+import MeetTheTeam from '../team';
 
 export default function DentalPage() {
   const services = [
@@ -25,7 +26,7 @@ export default function DentalPage() {
           style={{ fontFamily: 'OptimaModoki, sans-serif' }}
           className="text-2xl sm-text-5xl md:text-6xl font-semibold "
         >
-          Dedicated to Your Smile, Committed to Oral Health
+          Dedicated to Your<span className='text-[#EC95A4]'> Smile</span>, Committed to Oral Health
         </h1>
         <p
           style={{ fontFamily: 'OptimaModoki, sans-serif' }}
@@ -42,7 +43,7 @@ export default function DentalPage() {
 
       {/* Services Grid */}
       <main className="mt-12 w-full sm:w-[100%] px-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 mb-24">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 gap-6 sm:gap-8 mb-24">
           {services.map((service, index) => (
             <div
               key={index}
@@ -63,7 +64,7 @@ export default function DentalPage() {
         </div>
       </main>
 
-      <Achievements />
+      <MeetTheTeam />
     </div>
   );
 }

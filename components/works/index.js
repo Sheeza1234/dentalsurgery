@@ -28,7 +28,7 @@ export default function HowWeHelp() {
 
     return (
         <div>
-            <MovingBar />
+            {/* <MovingBar /> */}
             <div
                 style={{ fontFamily: 'Inter' }}
                 className="bg-[#C7EFFF] min-h-screen flex flex-col items-center px-4 sm:px-8"

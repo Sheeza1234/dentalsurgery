@@ -60,15 +60,15 @@ useEffect(() => {
         <div className="grid grid-cols-3 gap-56">
           <div className="relative group ">
             <Image
-              src="/welcome1.png"
-              alt="Dentist"
+              src="/main1.jpg"
+              alt="Dentist1"
               width={350}
               height={300}
               className="transition-transform transition-opacity duration-300 group-hover:opacity-0"
             />
             <Image
-              src="/welcome2.png"
-              alt="Dentist Hover"
+              src="/main1.jpg"
+              alt="Dentist Hover1"
               width={350}
               height={300}
               className="absolute top-0 left-0 opacity-0 translate-x-10 transition-transform transition-opacity duration-300 group-hover:translate-x-0 group-hover:opacity-100"
@@ -78,15 +78,15 @@ useEffect(() => {
           {/* Image 2 */}
           <div className="relative group">
             <Image
-              src="/welcome1.png"
-              alt="Team Celebrating"
+              src="/main3.JPG"
+              alt="Team Celebrating2"
               width={350}
               height={300}
               className="transition-transform transition-opacity duration-300 group-hover:opacity-0"
             />
             <Image
-              src="/welcome2.png"
-              alt="Team Celebrating Hover"
+              src="/main3.JPG"
+              alt="Team Celebrating Hover2"
               width={350}
               height={300}
               className="absolute top-0 left-0 opacity-0 translate-x-10 transition-transform transition-opacity duration-300 group-hover:translate-x-0 group-hover:opacity-100"
@@ -98,15 +98,15 @@ useEffect(() => {
           {/* Image 3 */}
           <div className="relative group">
             <Image
-              src="/welcome1.png"
-              alt="Dentist"
+              src="/main2.jpg"
+              alt="Dentist3"
               width={350}
               height={300}
               className="transition-transform transition-opacity duration-300 group-hover:opacity-0"
             />
             <Image
-              src="/welcome2.png"
-              alt="Dentist Hover"
+              src="/main2.jpg"
+              alt="Dentist Hover3"
               width={350}
               height={300}
               className="absolute top-0 left-0 opacity-0 translate-x-10 transition-transform transition-opacity duration-300 group-hover:translate-x-0 group-hover:opacity-100"
@@ -116,15 +116,15 @@ useEffect(() => {
           {/* Image 4 */}
           <div className="relative group">
             <Image
-              src="/welcome1.png"
-              alt="Dentist"
+              src="/main4.JPG"
+              alt="Dentist4"
               width={350}
               height={300}
               className="ml-[120px] transition-transform transition-opacity duration-300 group-hover:opacity-0"
             />
             <Image
-              src="/welcome2.png"
-              alt="Dentist Hover"
+              src="/main4.JPG"
+              alt="Dentist Hover4"
               width={350}
               height={300}
               className="ml-[120px] absolute top-0 left-0 opacity-0 translate-x-10 transition-transform transition-opacity duration-300 group-hover:translate-x-0 group-hover:opacity-100"
@@ -136,15 +136,15 @@ useEffect(() => {
           {/* Image 5 */}
           <div className="relative group">
             <Image
-              src="/welcome1.png"
-              alt="Dentist"
+              src="/main8.JPG"
+              alt="Dentist5"
               width={350}
               height={300}
               className="ml-[620px] transition-transform transition-opacity duration-300 group-hover:opacity-0"
             />
             <Image
-              src="/welcome2.png"
-              alt="Dentist Hover"
+              src="/main8.JPG"
+              alt="Dentist Hover5"
               width={350}
               height={300}
               className="ml-[620px] absolute top-0 left-0 opacity-0 translate-x-10 transition-transform transition-opacity duration-300 group-hover:translate-x-0 group-hover:opacity-100"

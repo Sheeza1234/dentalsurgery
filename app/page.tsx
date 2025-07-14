@@ -81,9 +81,9 @@ export default function CosmeticDentistry() {
               <div className="flex logo-container">
             <div className="logo-wrapper">
           {/* Duplicate the logos to create an infinite loop */}
-          {[...logos, ...logos].map((src, index) => (
+          {/* {[...logos, ...logos].map((src, index) => (
             <Image key={index} src={`/${src}`} alt={`Logo ${index}`} width={150} height={150} className="w-auto h-12 sm:h-16 mx-4" />
-          ))}
+          ))} */}
           </div>
         </div>
               </div>

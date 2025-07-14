@@ -30,7 +30,7 @@ export default function ContactSection() {
                     {/* Get Directions Button */}
                     <button 
                         style={{ fontFamily: 'OptimaModoki, sans-serif' }} 
-                        className="bg-[#1C4C57] lg:w-full text-md sm:text-xl md:text-3xl  max-w-[400px] text-[#93D9E6] px-6 py-2 mt-4 shadow-md hover:bg-[#C7EFFF] hover:text-[#1C4C57] transition-all duration-300"
+                        className="bg-[#1C4C57] text-[#EC95A4] lg:w-full text-md sm:text-xl md:text-3xl  max-w-[400px] px-6 py-2 mt-4 shadow-md hover:bg-[#C7EFFF] hover:text-[#1C4C57] transition-all duration-300"
                     >
                         GET DIRECTION
                     </button>

@@ -81,7 +81,7 @@ export default function Whyus() {
 
         {/* Footer */}
         <footer className="bg-[#1C4C57] text-white py-4 w-full max-w-md mb-12 rounded-lg text-center mt-10 hover:bg-[#C7EFFF] hover:text-[#1C4C57] px-4">
-          <p className="text-lg sm:text-xl md:text-2xl">Call Us Now (03) 5367 5355</p>
+          <p className="text-lg sm:text-xl md:text-2xl text-[#EC95A4]">Call Us Now (03) 5367 5355</p>
         </footer>
       </div>
 

@@ -5,10 +5,13 @@ import RequestAppointment from "../appointment";
 const MeetTheTeam = () => {
   const teamMembers = [
     { id: 1, name: "Dr Saba Farooq", image: "/Dr_Saba_Farooq.png" },
+    {id:9,name:'Dr Larry Benge',image:'/Dr_Larry_Benge.png'},
+     { id: 3, name: "Dr Bill Crawford", image: "/Dr_Bill_Crawford.png" },
+      { id: 7, name: "Mark Suniga", image: "/Mark_Suniga.png" },
     { id: 2, name: "Alarna Cirelli", image: "/Alarna_Cirelli.png" },
-    { id: 3, name: "Dr Bill Crawford", image: "/Dr_Bill_Crawford.png" },
     { id: 6, name: "Mansoora Sohail", image: "/Mansoora_Sohail.png" },
-     { id: 7, name: "Mark Suniga", image: "/Mark_Suniga.png" },
+     { id: 8, name: "Raamish Farooq", image: "/Raamish_Farooq.png"},
+     
   ];
 
   return (
@@ -34,7 +37,7 @@ const MeetTheTeam = () => {
              <div className="flex flex-col items-center gap-4">
   <div className="relative w-96 h-64 sm:w-72 sm:h-44">
     {/* Blob Background */}
-   <div className="relative w-84 h-32 sm:w-[268px] sm:h-[310px] rounded-full bg-[#BFD4F2] overflow-hidden flex items-center justify-center">
+   <div className="relative sm:w-[268px] sm:h-[310px] w-[268px] h-[310px] md:w-[268px] md:h-[310px] rounded-full bg-[#BFD4F2] overflow-hidden flex items-center justify-center">
   <Image
     src={member.image}
     alt={member.name}

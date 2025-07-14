@@ -18,13 +18,13 @@ export default function RequestAppointment() {
           <div className="flex flex-wrap justify-center gap-4 sm:gap-6 mt-6 sm:mt-10">
             <button
               style={{ fontFamily: "OptimaModoki, sans-serif" }}
-              className="bg-[#1C4C57] text-white px-4 sm:px-6 py-2 rounded-md text-lg sm:text-xl font-semibold shadow-md hover:bg-[#93D9E6] hover:text-[#1C4C57] transition"
+              className="bg-[#1C4C57] text-[#EC95A4] px-4 sm:px-6 py-2  rounded-md text-lg sm:text-xl font-semibold shadow-md hover:bg-[#93D9E6] hover:text-[#1C4C57] transition"
             >
               CLICK HERE
             </button>
             <button
               style={{ fontFamily: "OptimaModoki, sans-serif" }}
-              className="bg-[#1C4C57] text-white px-4 sm:px-6 py-2 rounded-md text-lg sm:text-xl font-semibold shadow-md hover:bg-[#93D9E6] hover:text-[#1C4C57] transition"
+              className="bg-[#1C4C57] text-[#EC95A4] px-4 sm:px-6 py-2 rounded-md text-lg sm:text-xl font-semibold shadow-md hover:bg-[#93D9E6] hover:text-[#1C4C57] transition"
             >
               (03) 5367 5355
             </button>
