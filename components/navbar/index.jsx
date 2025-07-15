@@ -10,7 +10,13 @@ export default function Navbar() {
     { icon: <FaInstagram color="pink" />, link: "https://youtube.com" },
     { icon: <FaGoogle className="text-[#D44638]" />, link: "https://twitter.com" },
   ];
-
+ const navLinks = [
+    { label: "Dental Services", hasDropdown: true },
+    { label: "Team", hasDropdown: false },
+    { label: "Our Practice", hasDropdown: false },
+    { label: "Patient", hasDropdown: true },
+    { label: "Contact", hasDropdown: false },
+  ];
   return (
     <div>
       <div className="w-full overflow-hidden">
