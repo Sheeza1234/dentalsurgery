@@ -40,7 +40,7 @@ export default function Whyus() {
             },
             {
               title: 'Flexible payment options to suit your needs',
-              text: 'Embark on a dental care journey like no other at our East Bacchus Marsh dental clinic, with an expert team dedicated to ensuring your visit is comfortable and pain-free.',
+              text: 'Embark on a dental care journey like no other at our Bacchus Marsh dental clinic, with an expert team dedicated to ensuring your visit is comfortable and pain-free.',
             },
             {
               title: 'A full range of professional dentistry services',
@@ -48,7 +48,7 @@ export default function Whyus() {
             },
             {
               title: 'A team of highly experienced dentists',
-              text: 'From routine check-ups to advanced treatments, our dentists in Bentleigh East will ensure your dental needs are met with expertise and personalised attention.',
+              text: 'From routine check-ups to advanced treatments, our dentists in Bacchus Marsh will ensure your dental needs are met with expertise and personalised attention.',
             },
           ].map((feature, index) => (
             <div key={index} className="px-2 sm:px-4 py-4">
