@@ -10,13 +10,7 @@ export default function Navbar() {
     { icon: <FaInstagram color="pink" />, link: "https://youtube.com" },
     { icon: <FaGoogle className="text-[#D44638]" />, link: "https://twitter.com" },
   ];
- const navLinks = [
-    { label: "Dental Services", hasDropdown: true },
-    { label: "Team", hasDropdown: false },
-    { label: "Our Practice", hasDropdown: false },
-    { label: "Patient", hasDropdown: true },
-    { label: "Contact", hasDropdown: false },
-  ];
+
   return (
     <div>
       <div className="w-full overflow-hidden">
@@ -25,19 +19,19 @@ export default function Navbar() {
         <div className="flex flex-wrap items-center justify-center md:gap-12 md:justify-between lg:justify-center px-4">
 
           {/* Address */}
-          <div className="flex items-center space-x-2 text-center md:text-left">
+          <div className="flex items-center space-x-1 text-center md:text-left">
             <FaLocationArrow className="text-[#C7EFFF] text-lg" />
             <span className="text-sm md:text-lg">223 Main Street, Bacchus Marsh Vic 3340</span>
           </div>
 
           {/* Hours */}
-          <div className="flex items-center space-x-2 text-center">
+          <div className="flex items-center space-x-1 text-center">
             <FaClock className="text-[#C7EFFF] text-lg" />
             <span className="text-sm md:text-lg">Mon to Fri 9:00 am - 5:00 pm</span>
           </div>
 
           {/* Email */}
-          <div className="flex items-center space-x-2 text-center">
+          <div className="flex items-center space-x-1 text-center">
             <FaEnvelope className="text-[#C7EFFF] text-lg" />
             <a href="mailto:admin@mainstreetdental.com.au" className="text-sm md:text-lg hover:text-blue-400">
               admin@mainstreetdental.com.au
@@ -45,7 +39,7 @@ export default function Navbar() {
           </div>
 
           {/* Request */}
-          <div className="flex items-center space-x-2 text-center">
+          <div className="flex items-center space-x-1 text-center">
             <FaCalendarAlt className="text-[#C7EFFF] text-lg" />
             <a href="#" className="text-sm md:text-lg hover:bg-[#93D9E6] hover:text-[#1C4C57] px-2 py-1 rounded">
               Request an Appointment
