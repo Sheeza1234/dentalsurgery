@@ -6,12 +6,12 @@ const Welcome = dynamic(() => import("../components/welcome/index"), { ssr: fals
 
 
 export default function CosmeticDentistry() {
-  // const logos = [
-  //   "medicare.png", "medi.png", "somno.png", "aust.png", "irisipum.png",
-  //   "DP.png", "DSD.png", "gIDE.png", "AOSTDS_logo_DHG.png", "Bupa.png",
-  //   "DIR-Logo-Dental-House.png", "HICAP.png", "SIRONA.png",
-  //   "Invisalign-Provider-in-Sunbury-Dental-Couture.png"
-  // ];
+  const logos = [
+    "medicare.png", "medi.png", "somno.png", "aust.png", "irisipum.png",
+    "DP.png", "DSD.png", "gIDE.png", "AOSTDS_logo_DHG.png", "Bupa.png",
+    "DIR-Logo-Dental-House.png", "HICAP.png", "SIRONA.png",
+    "Invisalign-Provider-in-Sunbury-Dental-Couture.png"
+  ];
   return (
     <div>
       <div className="bg-[#C7EFFF] w-full h-full pt-[100px]">
@@ -26,7 +26,7 @@ export default function CosmeticDentistry() {
           <div className="flex flex-col md:flex-row gap-8">
 
             {/* Animated Circle */}
-      <div className="relative md:ml-36 md:mr-24 md:w-[620px] md:h-[640px] flex items-center justify-center rounded-full overflow-hidden">
+      <div className="hidden lg:block relative md:ml-36 md:mr-24 md:w-[620px] md:h-[640px] flex items-center justify-center rounded-full overflow-hidden">
         {/* Animated Border */}
         <div className="absolute bg-[#1C4C57] inset-0 rounded-full border-4 border-transparent animate-border-spin before:absolute before:inset-0 before:rounded-full before:border-4 before:border-[#1C4C57] before:animate-border-warp"></div>
 
@@ -77,16 +77,15 @@ export default function CosmeticDentistry() {
               </h1>
 
               {/* Scrolling Logos */}
-              <div className="bg-[#C7EFFF] ml-4 h-[70px] p-2 w-[780px]  flex justify-center md:justify-start gap-8 mt-6 overflow-hidden">
+              {/* <div className="bg-[#C7EFFF] ml-4 h-[70px] p-2 w-[780px] w-screen  flex justify-center md:justify-start gap-8 mt-6 overflow-hidden">
               <div className="flex logo-container">
             <div className="logo-wrapper">
-          {/* Duplicate the logos to create an infinite loop */}
-          {/* {[...logos, ...logos].map((src, index) => (
+          {[...logos, ...logos].map((src, index) => (
             <Image key={index} src={`/${src}`} alt={`Logo ${index}`} width={150} height={150} className="w-auto h-12 sm:h-16 mx-4" />
-          ))} */}
+          ))}
           </div>
         </div>
-              </div>
+              </div> */}
 
             </div>
           </div>
