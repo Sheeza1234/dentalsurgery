@@ -121,7 +121,7 @@ useEffect(() => {
         surgery, continuing its tradition of exceptional dental services.
       </p>
 
-      <div className="flex justify-center mt-12 lg:mt-24">
+      <div className="flex justify-center mt-12 lg:mt-24 mb-12">
         <button
           style={{ fontFamily: "OptimaModoki, sans-serif" }}
           className="text-[#EC95A4] text-xl lg:text-4xl bg-[#1C4C57] py-3 lg:py-6 px-6 rounded hover:bg-[#C7EFFF] hover:text-[#1C4C57] transition"
