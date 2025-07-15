@@ -26,7 +26,7 @@ export default function CosmeticDentistry() {
           <div className="flex flex-col md:flex-row gap-8">
 
             {/* Animated Circle */}
-      <div className="hidden lg:block relative md:ml-36 md:mr-24 md:w-[620px] md:h-[640px] flex items-center justify-center rounded-full overflow-hidden">
+      <div className="hidden lg:flex relative md:ml-36 md:mr-24 md:w-[620px] md:h-[640px] flex items-center justify-center rounded-full overflow-hidden">
         {/* Animated Border */}
         <div className="absolute bg-[#1C4C57] inset-0 rounded-full border-4 border-transparent animate-border-spin before:absolute before:inset-0 before:rounded-full before:border-4 before:border-[#1C4C57] before:animate-border-warp"></div>
 
