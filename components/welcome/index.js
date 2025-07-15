@@ -56,41 +56,41 @@ useEffect(() => {
           transform: `translateY(-${offset * 1.2}px)`,
         }}
       >
-        <div className="grid grid-cols-3 gap-56">
+        <div className="grid grid-cols-3 gap-x-56 gap-y-0">
           <div className="relative group">
-            <Image src="/main1.jpg" alt="Dentist1" width={350} height={300}
+            <Image src="/main.png" alt="Dentist1" width={350} height={300}
               className="transition duration-300 group-hover:opacity-0" />
-            <Image src="/main1.jpg" alt="Dentist Hover1" width={350} height={300}
+            <Image src="/main.png" alt="Dentist Hover1" width={350} height={300}
               className="absolute top-0 left-0 opacity-0 translate-x-10 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100" />
           </div>
           <div className="relative group">
-            <Image src="/main3.JPG" alt="Team Celebrating2" width={350} height={300}
+            <Image src="/main1.png" alt="Team Celebrating2" width={350} height={300}
               className="transition duration-300 group-hover:opacity-0" />
-            <Image src="/main3.JPG" alt="Team Celebrating Hover2" width={350} height={300}
+            <Image src="/main1.png" alt="Team Celebrating Hover2" width={350} height={300}
               className="absolute top-0 left-0 opacity-0 translate-x-10 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100" />
           </div>
         </div>
 
-        <div className="ml-[346px] grid grid-cols-3 gap-56 mt-20">
+        <div className="ml-[346px] grid grid-cols-3 gap-56">
           <div className="relative group">
-            <Image src="/main2.jpg" alt="Dentist3" width={350} height={300}
+            <Image src="/main2.png" alt="Dentist3" width={350} height={300}
               className="transition duration-300 group-hover:opacity-0" />
-            <Image src="/main2.jpg" alt="Dentist Hover3" width={350} height={300}
+            <Image src="/main2.png" alt="Dentist Hover3" width={350} height={300}
               className="absolute top-0 left-0 opacity-0 translate-x-10 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100" />
           </div>
           <div className="relative group">
-            <Image src="/main4.JPG" alt="Dentist4" width={350} height={300}
+            <Image src="/main3.png" alt="Dentist4" width={350} height={300}
               className="ml-[120px] transition duration-300 group-hover:opacity-0" />
-            <Image src="/main4.JPG" alt="Dentist Hover4" width={350} height={300}
-              className="ml-[120px] absolute top-0 left-0 opacity-0 translate-x-10 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100" />
+            <Image src="/main3.png" alt="Dentist Hover4" width={350} height={300}
+              className="ml-[120px] absolute top-0 left-0 opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100" />
           </div>
         </div>
 
-        <div className="mt-20">
+        <div className="gap-56">
           <div className="relative group">
-            <Image src="/main8.JPG" alt="Dentist5" width={350} height={300}
+            <Image src="/main4.png" alt="Dentist5" width={350} height={300}
               className="ml-[620px] transition duration-300 group-hover:opacity-0" />
-            <Image src="/main8.JPG" alt="Dentist Hover5" width={350} height={300}
+            <Image src="/main4.png" alt="Dentist Hover5" width={350} height={300}
               className="ml-[620px] absolute top-0 left-0 opacity-0 translate-x-10 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100" />
           </div>
         </div>
