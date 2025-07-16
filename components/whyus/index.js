@@ -39,12 +39,12 @@ export default function Whyus() {
               text: 'Our team ensures seamless communication and personalised care that transcends linguistic barriers for a truly inclusive dental experience.',
             },
             {
-              title: 'Flexible payment options to suit your needs',
-              text: 'Embark on a dental care journey like no other at our Bacchus Marsh dental clinic, with an expert team dedicated to ensuring your visit is comfortable and pain-free.',
+              title: 'Unlock the Smile of Your Dreams with Expert Dental Care and Flexible Payment Plans',
+              text: 'At our dental clinic, we believe everyone deserves a healthy, confident smile. Whether youre looking for routine check-ups, cosmetic enhancements, or advanced restorative treatments, our experienced team is here to help you achieve the smile youve always wanted. We make it easier than ever with flexible payment options designed to suit your lifestyle and budget. Discover quality dental care that’s affordable, personalised, and stress-free—because your smile should never have to wait.',
             },
             {
-              title: 'A full range of professional dentistry services',
-              text: 'Unlock the smile of your dreams with our flexible payment options, tailored to suit your needs.',
+              title: 'Experience Exceptional Dental Care in Bacchus Marsh – Comfort, Expertise, and Compassion in Every Visit',
+              text: 'Embark on a dental care journey like no other at our trusted Bacchus Marsh dental clinic, where your comfort and wellbeing come first. Our highly skilled and friendly dental team is committed to providing pain-free, stress-free treatments in a welcoming environment. From routine check-ups and preventative care to advanced cosmetic and restorative procedures, we tailor every visit to suit your individual needs. Whether you’re a local resident or visiting from nearby areas, discover why families across Bacchus Marsh trust us for gentle, professional, and affordable dental care.',
             },
             {
               title: 'A team of highly experienced dentists',

@@ -76,9 +76,10 @@ export default function Footer() {
             <br />
             Bacchus Marsh Vic 3340
           </address>
-          <p className="text-lg sm:text-xl">Monday – Friday 8am – 5pm</p>
-          <p className="text-lg sm:text-xl">Saturday – Sleep Dentistry by Appointment Only</p>
+          <p className="text-lg sm:text-xl">Monday to Friday – 9 am to 5 pm</p>
+          <p className="text-lg sm:text-xl">Saturday – 9 am to 1 pm</p>
           <p className="text-lg sm:text-xl">Sunday – Closed</p>
+          <p className="text-lg sm:text-xl">Home of Sleep Dentistry BACCHUS MARSH</p>
         </div>
       </div>
 

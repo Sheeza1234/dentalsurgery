@@ -113,10 +113,10 @@ useEffect(() => {
       >
         Main Street Dental Practice is one of the oldest dental practices in{" "}
         <span className="text-[#EC95A4]">Bacchus Marsh</span>. According to
-        the <em>Melton Express</em> published on Saturday, November 28, 1942,
+        the <em className="text-[#EC95A4]">Melton Express</em> published on Saturday, November 28, 1942,
         resident dentist Mr. M.G. Pietriche began his practice at the{" "}
         <span className="text-[#EC95A4]">Main Street</span> surgery on Monday,
-        November 30. In 2008,{" "}
+        <span className="text-[#EC95A4]">30 November 1942.</span> In 2008,{" "}
         <span className="text-[#EC95A4]">Dr. Saba Farooq</span> joined the
         surgery, continuing its tradition of exceptional dental services.
       </p>
