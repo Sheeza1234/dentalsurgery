@@ -33,7 +33,7 @@ export default function Navbar() {
           {/* Hours */}
           <div className="flex items-center space-x-1 text-center">
             <FaClock className="text-[#C7EFFF] text-lg" />
-            <span className="text-sm md:text-lg">Mon-Fri 9:00 am - 5:00 pm  Sat 9:00 am-1:00 pm</span>
+            <span className="text-sm md:text-lg">Mon-Fri 9:00 am - 5:00 pm   Sat 9:00 am-1:00 pm</span>
           </div>
 
           {/* Email */}
