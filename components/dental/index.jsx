@@ -33,9 +33,9 @@ export default function DentalPage() {
           className=" left-0 right-0 px-4  justify-center mt-8 text-sm sm:text-2xl md:text-3xl max-w-[90%] mx-auto"
         >
           MSDP has proudly served the Bacchus Marsh community and the wider
-          Moorabool Shire since 1942. Under the leadership of Dr. Saba Farooq
+          Moorabool Shire since 1942. Under the leadership of Dr Saba Farooq
           since 2008, the practice has expanded its commitment to local residents.
-          Dr. Farooq has been instrumental in bringing experienced dental specialists
+          Dr Farooq has been instrumental in bringing experienced dental specialists
           from Melbourne to Bacchus Marsh, ensuring that the community has access to
           expert care close to home under one roof.
         </p>
