@@ -40,11 +40,11 @@ export default function Whyus() {
             },
             {
               title: 'Unlock the Smile of Your Dreams with Expert Dental Care and Flexible Payment Plans',
-              text: 'At our dental clinic, we believe everyone deserves a healthy, confident smile. Whether youre looking for routine check-ups, cosmetic enhancements, or advanced restorative treatments, our experienced team is here to help you achieve the smile youve always wanted. We make it easier than ever with flexible payment options designed to suit your lifestyle and budget. Discover quality dental care that’s affordable, personalised, and stress-free—because your smile should never have to wait.',
+              text: "At our dental clinic, we believe everyone deserves a healthy, confident smile. Whether you're looking for routine check-ups, cosmetic enhancements, or advanced restorative treatments, our experienced team is here to help you achieve the smile you've always wanted. We make it easier than ever with flexible payment options designed to suit your lifestyle and budget. Discover quality dental care that’s affordable, personalised, and stress-free—because your smile should never have to wait.",
             },
             {
               title: 'Experience Exceptional Dental Care in Bacchus Marsh – Comfort, Expertise, and Compassion in Every Visit',
-              text: 'Embark on a dental care journey like no other at our trusted Bacchus Marsh dental clinic, where your comfort and wellbeing come first. Our highly skilled and friendly dental team is committed to providing pain-free, stress-free treatments in a welcoming environment. From routine check-ups and preventative care to advanced cosmetic and restorative procedures, we tailor every visit to suit your individual needs. Whether you’re a local resident or visiting from nearby areas, discover why families across Bacchus Marsh trust us for gentle, professional, and affordable dental care.',
+              text: "Embark on a dental care journey like no other at our trusted Bacchus Marsh dental clinic, where your comfort and wellbeing come first. Our highly skilled and friendly dental team is committed to providing pain-free, stress-free treatments in a welcoming environment. From routine check-ups and preventative care to advanced cosmetic and restorative procedures, we tailor every visit to suit your individual needs. Whether you’re a local resident or visiting from nearby areas, discover why families across Bacchus Marsh trust us for gentle, professional, and affordable dental care.",
             },
             {
               title: 'A team of highly experienced dentists',
@@ -52,10 +52,10 @@ export default function Whyus() {
             },
           ].map((feature, index) => (
             <div key={index} className="px-2 sm:px-4 py-4">
-              <h3 className="text-2xl sm:text-3xl font-bold text-gray-800 break-words">
+              <h3 className="text-2xl sm:text-3xl font-bold text-gray-800 break-words text-[#1C4C57]">
                 {feature.title}
               </h3>
-              <p className="text-gray-700 mt-2 text-sm sm:text-xl md:text-2xl break-words">
+              <p className="text-gray-700 mt-2 text-sm sm:text-xl md:text-2xl break-words text-[#1C4C57]">
                 {feature.text}
               </p>
             </div>
