@@ -52,10 +52,10 @@ export default function Whyus() {
             },
           ].map((feature, index) => (
             <div key={index} className="px-2 sm:px-4 py-4">
-              <h3 className="text-2xl sm:text-3xl font-bold text-gray-800 break-words text-[#1C4C57]">
+              <h3 className="text-2xl sm:text-3xl font-bold break-words text-[#1C4C57]">
                 {feature.title}
               </h3>
-              <p className="text-gray-700 mt-2 text-sm sm:text-xl md:text-2xl break-words text-[#1C4C57]">
+              <p className="mt-2 text-sm sm:text-xl md:text-2xl break-words text-[#1C4C57]">
                 {feature.text}
               </p>
             </div>
