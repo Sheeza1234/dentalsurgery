@@ -38,7 +38,7 @@ const AppointmentForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch("https://formspree.io/f/mvgqgnpo", {
+      const res = await fetch("https://formspree.io/f/xkgzglnk", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
