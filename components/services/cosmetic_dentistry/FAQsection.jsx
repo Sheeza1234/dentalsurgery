@@ -24,9 +24,11 @@ const FAQSection = ({CustomComponent}) => {
             From appointment scheduling to post-treatment care, find the information you need to make your dental experience
             with us smooth and informed.
           </p>
+          <a href="tel:0353675355">
           <button className="bg-[#1C4C57] mt-6 px-6 py-3 text-2xl text-[#EC95A4] font-semibold rounded-md hover:bg-[#B6E5FD] hover:text-[#1C4C57] transition duration-300">
             CALL US AT (03) 5367 5355
           </button>
+          </a>
         </div>
 
         {/* Right Side (FAQ List) */}

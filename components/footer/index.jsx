@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FaFacebook, FaYoutube } from "react-icons/fa";
 
 export default function Footer() {
@@ -60,12 +61,15 @@ export default function Footer() {
         <div>
           <h3 className="font-bold text-4xl mb-6 text-[#93D9E6]">Contact</h3>
           <p className="mb-3 hover:text-[#93D9E6] text-lg sm:text-lg md:text-xl">Talk with an expert?</p>
-          <p className="mb-5 hover:text-[#93D9E6] text-lg sm:text-lg md:text-xl">(03) 5367 5355</p>
+          <a href="tel:0353675355">
+          <p className="mb-5 hover:text-[#93D9E6] text-lg sm:text-lg md:text-xl">(03) 5367 5355</p></a>
           <p className="text-lg sm:text-lg md:text-xl">Send email enquiry</p>
           <a href="mailto:admin@ebdg.com.au" className="hover:text-[#93D9E6] text-md sm:text-md md:text-md">
             admin@mainstreetdental.com.au
           </a>
-          <p className="mt-6 hover:text-[#93D9E6] text-lg sm:text-lg md:text-xl">Book an Appointment?</p>
+          <Link href='/appointment'>
+          <p className="mt-6 hover:text-[#93D9E6] text-lg sm:text-lg md:text-xl">Book an Appointment</p>
+          </Link>
         </div>
 
         {/* Location */}

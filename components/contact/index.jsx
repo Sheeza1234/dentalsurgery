@@ -28,12 +28,19 @@ export default function ContactSection() {
                     </p>
 
                     {/* Get Directions Button */}
+                    <a
+  href="https://www.google.com/maps/dir/?api=1&destination=223+Main+Street+Bacchus+Marsh+Victoria+3340"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+
                     <button 
                         style={{ fontFamily: 'OptimaModoki, sans-serif' }} 
                         className="bg-[#1C4C57] text-[#EC95A4] lg:w-full text-md sm:text-xl md:text-3xl  max-w-[400px] px-6 py-2 mt-4 shadow-md hover:bg-[#C7EFFF] hover:text-[#1C4C57] transition-all duration-300"
                     >
                         GET DIRECTION
                     </button>
+                    </a>
                 </div>
             </div>
             <Footer />

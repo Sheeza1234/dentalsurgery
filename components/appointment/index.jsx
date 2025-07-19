@@ -1,5 +1,6 @@
 "use client";
 import CommunityGrid from "../community/index";
+import Link from "next/link";
 
 export default function RequestAppointment() {
   return (
@@ -16,12 +17,14 @@ export default function RequestAppointment() {
 
           {/* Buttons */}
           <div className="flex flex-wrap justify-center gap-4 sm:gap-6 mt-6 sm:mt-10">
+            <Link href="/appointment">
             <button
               style={{ fontFamily: "OptimaModoki, sans-serif" }}
               className="bg-[#1C4C57] text-[#EC95A4] px-4 sm:px-6 py-2  rounded-md text-lg sm:text-xl font-semibold shadow-md hover:bg-[#93D9E6] hover:text-[#1C4C57] transition"
             >
               CLICK HERE
             </button>
+            </Link>
             <button
               style={{ fontFamily: "OptimaModoki, sans-serif" }}
               className="bg-[#1C4C57] text-[#EC95A4] px-4 sm:px-6 py-2 rounded-md text-lg sm:text-xl font-semibold shadow-md hover:bg-[#93D9E6] hover:text-[#1C4C57] transition"

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import DentalPage from '../dental/index';
 
 export default function Whyus() {
@@ -73,15 +74,18 @@ export default function Whyus() {
               A<span className="ml-2">RE</span>
             </span>
           </h2>
+          <Link href="tel:0353675355">
           <p className="mt-4 text-sm sm:text-xl md:text-2xl leading-relaxed">
             Do You Have A Dental Emergency? Call Us Immediately On{' '}
             <span className="font-semibold">(03) 5367 5355</span>
           </p>
+          </Link>
         </section>
 
         {/* Footer */}
         <footer className="bg-[#1C4C57] text-white py-4 w-full max-w-md mb-12 rounded-lg text-center mt-10 hover:bg-[#C7EFFF] hover:text-[#1C4C57] px-4">
-          <p className="text-lg sm:text-xl md:text-2xl text-[#EC95A4]">Call Us Now (03) 5367 5355</p>
+         <a href="tel:0353675355">
+          <p className="text-lg sm:text-xl md:text-2xl text-[#EC95A4]">Call Us Now (03) 5367 5355</p></a>
         </footer>
       </div>
 

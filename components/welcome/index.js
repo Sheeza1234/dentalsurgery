@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import HowWeHelp from "../works/index";
+import Link from "next/link";
 
 export default function Welcome() {
   const [offset, setOffset] = useState(0);
@@ -26,8 +27,6 @@ useEffect(() => {
     };
   }
 }, []);
-
-  
 
   return (
   <div className="bg-[#93D9E6] flex flex-col items-center overflow-hidden">
@@ -121,12 +120,14 @@ useEffect(() => {
       </p>
 
       <div className="flex justify-center mt-12 lg:mt-24 mb-12">
+        <Link href="/appointment">
         <button
           style={{ fontFamily: "OptimaModoki, sans-serif" }}
           className="text-[#EC95A4] text-xl lg:text-4xl bg-[#1C4C57] py-3 lg:py-6 px-6 rounded hover:bg-[#C7EFFF] hover:text-[#1C4C57] transition"
         >
           Request an Appointment
         </button>
+        </Link>
       </div>
     </div>
 

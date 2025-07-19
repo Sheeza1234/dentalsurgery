@@ -1,14 +1,16 @@
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import { FaFacebookF, FaYoutube, FaInstagram, FaGoogle, FaClock, FaEnvelope, FaCalendarAlt, FaLocationArrow,FaBars,FaTimes,FaPlus,FaPhone } from "react-icons/fa";
+import AppointmentForm from "../services/cosmetic_dentistry/AppointmentForm";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const socialLinks = [
-    { icon: <FaFacebookF color="blue" />, link: "https://facebook.com" },
+    { icon: <FaFacebookF color="blue" />, link: "https://www.facebook.com/MainStreetDentalBacchusMarsh" },
     { icon: <FaYoutube color="red" />, link: "https://linkedin.com" },
-    { icon: <FaInstagram color="pink" />, link: "https://youtube.com" },
-    { icon: <FaGoogle className="text-[#D44638]" />, link: "https://twitter.com" },
+    { icon: <FaInstagram color="pink" />, link: "https://www.instagram.com/mainstreetdentalpractice?igsh=cng2MWNnb2szZHc=" },
+    { icon: <FaGoogle className="text-[#D44638]" />, link: "https://mainstreetdental.com.au/" },
   ];
  const navLinks = [
     { label: "Dental Services", hasDropdown: true },
@@ -27,7 +29,12 @@ export default function Navbar() {
           {/* Address */}
           <div className="flex items-center space-x-1 text-center md:text-left">
             <FaLocationArrow className="text-[#C7EFFF] text-lg" />
-            <span className="text-sm md:text-lg">223 Main Street, Bacchus Marsh Vic 3340</span>
+                                <a
+  href="https://www.google.com/maps/dir/?api=1&destination=223+Main+Street+Bacchus+Marsh+Victoria+3340"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+            <span className="text-sm md:text-lg">223 Main Street, Bacchus Marsh Vic 3340</span></a>
           </div>
 
           {/* Hours */}
@@ -47,9 +54,9 @@ export default function Navbar() {
           {/* Request */}
           <div className="flex items-center space-x-1 text-center">
             <FaCalendarAlt className="text-[#C7EFFF] text-lg" />
-            <a href="#" className="text-sm md:text-lg hover:bg-[#93D9E6] hover:text-[#1C4C57] px-2 py-1 rounded">
+            <Link href="/appointment" className="text-sm md:text-lg hover:bg-[#93D9E6] hover:text-[#1C4C57] px-2 py-1 rounded">
               Request an Appointment
-            </a>
+            </Link>
           </div>
         </div>
       </header>
@@ -65,9 +72,11 @@ export default function Navbar() {
           ))}
         </div>
         {/* Call Us button directly below icons */}
+        <a href="tel:0353675355">
         <button className="bg-[#1C4C57] text-lg md:text-xl text-[#EC95A4] w-48 md:w-72 h-12 rounded hover:bg-[#93D9E6] hover:text-[#1C4C57] transition">
           Call Us Now (03) 5367 5355
         </button>
+        </a>
       </div>
 
       {/* Main Navbar */}

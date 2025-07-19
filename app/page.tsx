@@ -93,7 +93,8 @@ export default function CosmeticDentistry() {
 
         {/* Call to Action Button */}
         <div className="flex justify-center mt-12">
-          <button className="text-xl md:text-2xl mb-12 text-[#EC95A4] w-48 md:w-64 h-16 bg-[#1C4C57] rounded-md hover:bg-[#93D9E6] hover:text-[#1C4C57] transition">
+          <button  onClick={() => window.open('https://healthengine.com.au/public/practice/appointments.php?id=34902', '_blank')}
+    className="text-xl md:text-2xl mb-12 text-[#EC95A4] w-48 md:w-64 h-16 bg-[#1C4C57] rounded-md hover:bg-[#93D9E6] hover:text-[#1C4C57] transition">
             Book Now
           </button>
         </div>
