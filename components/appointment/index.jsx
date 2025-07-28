@@ -1,6 +1,7 @@
 "use client";
 import CommunityGrid from "../community/index";
 import Link from "next/link";
+import FAQSections from '../Faqsection/index'
 
 export default function RequestAppointment() {
   return (
@@ -34,7 +35,8 @@ export default function RequestAppointment() {
           </div>
         </div>
       </div>
-      <CommunityGrid />
+      <FAQSections/>
+      
     </div>
   );
 }

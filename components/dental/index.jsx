@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import Achievements from '../achievements/index';
 import MeetTheTeam from '../team';
+import Image from 'next/image';
+
 
 export default function DentalPage() {
   const services = [
@@ -45,21 +47,28 @@ export default function DentalPage() {
       <main className="mt-12 w-full sm:w-[100%] px-4">
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 gap-6 sm:gap-8 mb-24">
           {services.map((service, index) => (
-            <div
-              key={index}
-              className="relative h-96 rounded-lg overflow-hidden shadow-lg border-2 border-[#1C4C57] text-white"
-              style={{ backgroundImage: `url(${service.image})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
-            >
-              {/* Dark Overlay for Image */}
-              <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+<div
+  key={index}
+  className="relative h-96 rounded-lg overflow-hidden shadow-lg border-2 border-[#1C4C57] text-white"
+>
+  <Image
+    src={service.image}
+    alt={service.title}
+    fill
+    className="object-cover"
+    sizes="(max-width: 768px) 100vw, 25vw"
+    priority={index < 2} // load first 2 eagerly, rest lazy
+  />
 
-              {/* Colored Text Box at Bottom */}
-              <div className="absolute w-1/2 bottom-0 left-1/2 -translate-x-1/2 rounded-lg mb-4 w-2/3 flex items-center justify-center bg-[#C7EFFF] bg-opacity-90 text-white text-center p-3">
-                <h2 className="font-semibold text-xl text-[#1C4C57] sm:text-lg">{service.title}</h2>
-              </div>
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black bg-opacity-30 z-10"></div>
 
+  {/* Title Box */}
+  <div className="absolute bottom-0 left-1/2 -translate-x-1/2 rounded-lg mb-4 w-2/3 flex items-center justify-center bg-[#C7EFFF] bg-opacity-90 text-white text-center p-3 z-20">
+    <h2 className="font-semibold text-xl text-[#1C4C57] sm:text-lg">{service.title}</h2>
+  </div>
+</div>
 
-            </div>
           ))}
         </div>
       </main>

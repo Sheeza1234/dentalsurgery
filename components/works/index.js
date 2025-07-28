@@ -2,6 +2,8 @@
 import Whyus from '../whyus/index';
 import { useRouter } from 'next/navigation';
 import dynamic from "next/dynamic";
+import Image from 'next/image';
+
 
 const MovingBar = dynamic(() => import("@/components/movingbar"), { ssr: false });
 
@@ -48,22 +50,29 @@ export default function HowWeHelp() {
                 <div className="mt-12 max-w-[1500px]">
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                     {cards.map((service, index) => (
-            <div
-              key={index}
-              className="relative w-[350px] h-72  overflow-hidden shadow-lg  text-white"
-              style={{ backgroundImage: `url(${service.image})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
-              onClick={() => router.push(`/services/${service.slug}`)}
-            >
-              {/* Dark Overlay for Image */}
-              <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+<div
+  key={index}
+  className="relative w-[350px] h-72 overflow-hidden shadow-lg text-white cursor-pointer"
+  onClick={() => router.push(`/services/${service.slug}`)}
+>
+  {/* Optimized image */}
+  <Image
+    src={service.image}
+    alt={service.title}
+    fill
+    className="object-cover"
+    priority={index < 4} // load top 4 images eagerly
+  />
 
-              {/* Colored Text Box at Bottom */}
-              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 bg-[#1C4C57] rounded-full mb-4  flex items-center justify-center text-white text-center p-3">
-                <h2 className="font-semibold text-lg text-[#C7EFFF] sm:text-md">{service.title}</h2>
-              </div>
+  {/* Dark overlay */}
+  <div className="absolute inset-0 bg-black bg-opacity-30 z-10"></div>
 
+  {/* Title box */}
+  <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-20 bg-[#1C4C57] rounded-full mb-4 flex items-center justify-center text-white text-center p-3">
+    <h2 className="font-semibold text-lg text-[#C7EFFF] sm:text-md">{service.title}</h2>
+  </div>
+</div>
 
-            </div>
           ))}
                     </div>
                 </div>
