@@ -35,42 +35,48 @@ const AppointmentForm = () => {
     });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const res = await fetch("https://formspree.io/f/xkgzglnk", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
+ const handleSubmit = async (e) => {
+  e.preventDefault();
+  try {
+    const res = await fetch("https://formspree.io/f/xkgzglnk", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    const result = await res.json();
+    if (res.ok) {
+      // 🔁 Google event trigger
+      if (typeof window !== "undefined" && typeof window.gtag === "function") {
+        window.gtag("event", "OBS Webplugin Booking Complete");
+      }
+
+      alert("Appointment request sent successfully!");
+
+      setFormData({
+        patientType: "new",
+        firstName: "",
+        lastName: "",
+        email: "",
+        mobile: "",
+        contactMethod: [],
+        treatment: "",
+        preferredDate: "",
+        preferredTime: "",
+        message: "",
       });
 
-      const result = await res.json();
-      if (res.ok) {
-        alert("Appointment request sent successfully!");
-
-        setFormData({
-          patientType: "new",
-          firstName: "",
-          lastName: "",
-          email: "",
-          mobile: "",
-          contactMethod: [],
-          treatment: "",
-          preferredDate: "",
-          preferredTime: "",
-          message: "",
-        });
-
-      } else {
-        alert("Failed to send. Please try again.");
-      }
-    } catch (err) {
-      console.error("Submit error:", err);
-      alert("An error occurred.");
+    } else {
+      alert("Failed to send. Please try again.");
     }
-  };
+  } catch (err) {
+    console.error("Submit error:", err);
+    alert("An error occurred.");
+  }
+};
+
 
 
 
