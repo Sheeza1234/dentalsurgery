@@ -59,7 +59,7 @@ export default function CosmeticDentistry({CustomComponent}) {
 
             {/* Text Content */}
             <div className="ml-16 text-center md:text-left mt-8 sm:mt-12 md:mt-24 max-w-[95%] sm:max-w-[90%] lg:max-w-[900px]">
-              <h1 className="text-3xl sm:text-5xl md:text-8xl text-[#1C4C57]" style={{ fontFamily: 'Italianno, sans-serif' }}>
+              <h1 className="text-2xl sm:text-5xl md:text-6xl text-[#1C4C57]" style={{ fontFamily: 'Abnes, sans-serif' }}>
                 COSMETIC <span className="ml-4">DENTISTRY</span>
               </h1>
               <h2 className="text-2xl sm:text-4xl md:text-7xl text-[#1C4C57] mt-4">
@@ -69,7 +69,7 @@ export default function CosmeticDentistry({CustomComponent}) {
               </h2>
 
               {/* Scrolling Logos */}
-              <div className="bg-[#C7EFFF] mx-auto md:mx-0 h-[60px] sm:h-[70px] p-2 w-full max-w-[95%] sm:max-w-[600px] flex justify-center md:justify-start gap-8 mt-6 overflow-hidden">
+              {/* <div className="bg-[#C7EFFF] mx-auto md:mx-0 h-[60px] sm:h-[70px] p-2 w-full max-w-[95%] sm:max-w-[600px] flex justify-center md:justify-start gap-8 mt-6 overflow-hidden">
                 <div className="flex logo-container">
                   <div className="logo-wrapper flex animate-scroll">
                     {[...logos, ...logos].map((src, index) => (
@@ -77,7 +77,7 @@ export default function CosmeticDentistry({CustomComponent}) {
                     ))}
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </main>
@@ -95,3 +95,6 @@ export default function CosmeticDentistry({CustomComponent}) {
     </div>
   );
 }
+
+
+

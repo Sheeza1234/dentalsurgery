@@ -8,7 +8,7 @@ const Cosmetic1 = ({CustomComponent}) => {
     <section className="bg-[#2F7584] text-white" style={{ fontFamily: "OptimaModoki, sans-serif" }}>
       <div className="w-full max-w-screen-6xl mx-auto h-[300px] overflow-hidden">
         <Image
-          src="/section1.png"
+          src="/section1.jpg"
           alt="section1"
           layout="intrinsic" // Better layout option
           width={5000} 

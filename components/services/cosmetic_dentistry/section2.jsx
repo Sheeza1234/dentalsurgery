@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Cosmetic3 from '../../services/cosmetic_dentistry/section3'
+import Cosmetic3 from './section3'
 import Cosmetic4 from "./section4";
 
 export default function Cosmetic2({ CustomComponent }) {
@@ -27,7 +27,7 @@ export default function Cosmetic2({ CustomComponent }) {
         </p>
 
         {/* Title Section */}
-        <Image src="/section2.png" alt="section" width={1100} height={300} />
+        <Image src="/section3.jpg" alt="section" width={1100} height={300} />
 
       </div>
       {CustomComponent && <CustomComponent />}
