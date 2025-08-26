@@ -18,14 +18,15 @@ export default function Cosmetic4({CustomComponent}) {
       {/* Quote */}
       <div className="max-w-3xl text-white text-2xl leading-relaxed italic relative mt-3">
         <span className="text-[#1C4C57] text-6xl absolute -left-6 top-0">“</span>
-        From the Reception staff Chloe and Taylah to the dental assistant Tess and
-        finally, to the amazing Dr Thea, I have been looked after so well!! I would
-        highly recommend anyone to attend as my experience has been wonderful.
+        I have been here for at least 2-3 years, and their service has been amazing. 
+        The staff are absolutely lovely and go to great lengths to ensure my teeth are healthy and 
+        straight due to my braces. I've been seeing Saba, and she is calming and amazing in what she 
+        does when it comes to my dental health. Highly recommend 😊
         <span className="text-[#1C4C57] text-6xl absolute -right-6 bottom-0">”</span>
       </div>
 
       {/* Patient Name */}
-      <p className="text-[#1C4C57] text-3xl font-semibold mt-4">Brenda F.</p>
+      <p className="text-[#1C4C57] text-3xl font-semibold mt-4">Misha</p>
 
       {/* Star Rating */}
       <div className="flex mt-2 space-x-1 text-[#EC95A4]">

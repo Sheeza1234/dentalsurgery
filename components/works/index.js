@@ -10,21 +10,21 @@ const MovingBar = dynamic(() => import("@/components/movingbar"), { ssr: false }
 export default function HowWeHelp() {
     const cards = [
         { title: 'Cosmetic Dentistry', image: '/cosmetic_densitry.jpg',slug:'cosmetic_dentistry' },
-        { title: 'Dental Implants', image: '/dental_implant.jpg',slug:'dental-implants' },
+        { title: 'Dental Implants', image: '/dental_implant.jpg',slug:'dental_implants' },
         { title: 'Orthodontics', image: '/ortho.jpg',slug:'orthodontics' },
-        {title:'Invisalign',image:'/insialign.jpg',slug:'insialign'},
+        {title:'Invisalign',image:'/insialign.jpg',slug:'invisalign'},
         { title: 'Dentures', image: '/dentures.jpg',slug:'dentures' },
-        { title: 'Brxism TMJ and Injectables', image: '/brixsim.jpg',slug:'brxism' },
-        { title: 'Children Dental Care', image: '/childrendental.jpg',slug:'children-care' },
-        { title: 'Teeth Grinding', image: '/restoric_densitry.jpg',slug:'teeth-grinding' },
-        { title: 'Restorative Dentistry', image: '/teeth_grinding.jpg',slug:'restorative-dentisry' },
-        { title: 'Sleep Apnoea', image: '/sleepapnea.jpg',slug:'sleep-apnoea' },
-        { title: 'Sleep Dentistry', image: '/sleep_dentistry.jpg',slug:'sleep-dentisry' },
-        { title: 'Senior Dental Care', image: '/senior_dentalcare.jpg',slug:'senior-dental' },
-        { title: 'Wisdom Teeth Extraction', image: '/wisdomteeth.jpg',slug:'wisdom-teeth' },
-        { title: 'Emergency Dentistry', image: '/emergency_care.jpg',slug:'emergency-dentisry' },
-        { title: 'Bad Breath', image: '/bad_breeth.jpg',slug:'bad-breath' },
-        { title: 'General Dentistry', image: '/general_dentistry.jpg',slug:'general-dentisry' }
+        { title: 'Brxism TMJ and Injectables', image: '/brixsim.jpg',slug:'brixsm' },
+        { title: 'Children Dental Care', image: '/childrendental.jpg',slug:'children_dental' },
+        { title: 'Teeth Grinding', image: '/restoric_densitry.jpg',slug:'teeth_grinding' },
+        { title: 'Restorative Dentistry', image: '/teeth_grinding.jpg',slug:'restorative_dentistry' },
+        { title: 'Sleep Apnoea', image: '/sleepapnea.jpg',slug:'sleep_apnoea' },
+        { title: 'Sleep Dentistry', image: '/sleep_dentistry.jpg',slug:'sleep_dentistry' },
+        { title: 'Senior Dental Care', image: '/senior_dentalcare.jpg',slug:'senior_dental' },
+        { title: 'Wisdom Teeth Extraction', image: '/wisdomteeth.jpg',slug:'wisdom_teeth' },
+        { title: 'Emergency Dentistry', image: '/emergency_care.jpg',slug:'emergency_dentistry' },
+        { title: 'Bad Breath', image: '/bad_breeth.jpg',slug:'bad_breath' },
+        { title: 'General Dentistry', image: '/general_dentistry.jpg',slug:'general_dentistry' }
     ];
     const router=useRouter();
 
