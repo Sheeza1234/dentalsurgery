@@ -2,20 +2,21 @@ import Head from 'next/head';
 import Achievements from '../achievements/index';
 import MeetTheTeam from '../team';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
 
 export default function DentalPage() {
   const services = [
-    { title: 'Get a Smile Makeover', image: '/smile_make.jpg' },
-    { title: 'All on 4', image: '/allon4.jpg' },
-    { title: 'Fill the Gap in My Smile', image: '/gap_in_smile.jpg' },
-    { title: 'Treat My Toothache', image: '/treat_my_tooth.jpg' },
-    { title: 'Family Dentistry', image: '/family_dentistry.jpg' },
-    { title: 'Early Orthodontic Treatment', image: '/early_ortho.jpg' },
-    { title: 'Treat My Tooth Discoloration', image: '/tooth_discolration.jpg' },
-    { title: 'Dental Checkup and Clean', image: '/dentures.jpg' }
+    { title: 'Get a Smile Makeover', image: '/smile_make.jpg',slug:'get_a_smile_makeover' },
+    { title: 'All on 4', image: '/allon4.jpg',slug:'all_on_4' },
+    { title: 'Fill the Gap in My Smile', image: '/gap_in_smile.jpg',slug:'fill_the_gap_my_smile' },
+    { title: 'Treat My Toothache', image: '/treat_my_tooth.jpg',slug:'treat_my_toothache' },
+    { title: 'Family Dentistry', image: '/family_dentistry.jpg',slug:'family_dentistry' },
+    { title: 'Early Orthodontic Treatment', image: '/early_ortho.jpg',slug:'early_orthodontics_treatment' },
+    { title: 'Treat My Tooth Discoloration', image: '/tooth_discolration.jpg',slug:'treat_my_tooth_discoloration' },
+    { title: 'Dental Checkup and Clean', image: '/dentures.jpg',slug:'dental_checkup_and_clean' }
   ];
-
+const router=useRouter();
   return (
     <div style={{ fontFamily: 'OptimaModoki, sans-serif' }}  className="bg-[#1C4C57] min-h-screen flex flex-col items-center">
       <Head>
@@ -45,11 +46,12 @@ export default function DentalPage() {
 
       {/* Services Grid */}
       <main className="mt-12 w-full sm:w-[100%] px-4">
-        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 gap-6 sm:gap-8 mb-24">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 gap-6 sm:gap-8 mb-24" >
           {services.map((service, index) => (
 <div
   key={index}
   className="relative h-96 rounded-lg overflow-hidden shadow-lg border-2 border-[#1C4C57] text-white"
+  onClick={() => router.push(`/services/${service.slug}`)}
 >
   <Image
     src={service.image}
