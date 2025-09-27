@@ -18,14 +18,12 @@ export default function Cosmetic4({CustomComponent}) {
       {/* Quote */}
       <div className="max-w-3xl text-white text-2xl leading-relaxed italic relative mt-3">
         <span className="text-[#1C4C57] text-6xl absolute -left-6 top-0">“</span>
-        From the Reception staff Chloe and Taylah to the dental assistant Tess and
-        finally, to the amazing Dr Thea, I have been looked after so well!! I would
-        highly recommend anyone to attend as my experience has been wonderful.
+        If you want a caring, gentle dentist I highly recommend Saba. I have complete trust in her. She is really tiny which means to me her hands are tiny. Think about it, a fist full of tiny fingers or a fist full of large fingers - in your mouth. I have been going to her since she first came to Bacchus Marsh. I am 77 and have my own teeth and I feel with Saba’s care I will keep them until the end.
         <span className="text-[#1C4C57] text-6xl absolute -right-6 bottom-0">”</span>
       </div>
 
       {/* Patient Name */}
-      <p className="text-[#1C4C57] text-3xl font-semibold mt-4">Brenda F.</p>
+      <p className="text-[#1C4C57] text-3xl font-semibold mt-4">Shirley Bawden</p>
 
       {/* Star Rating */}
       <div className="flex mt-2 space-x-1 text-[#EC95A4]">
