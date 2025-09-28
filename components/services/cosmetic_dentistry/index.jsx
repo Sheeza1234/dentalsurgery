@@ -20,16 +20,17 @@ export default function CosmeticDentistry({CustomComponent}) {
         <main className="flex flex-col px-4 md:px-12 mt-20 sm:mt-36">
           <div className="flex flex-col md:flex-row gap-8 items-center justify-center md:justify-start">
             {/* Animated Circle */}
-            <div className=" ml-24 relative w-[280px] h-[280px] sm:w-[400px] sm:h-[400px] md:w-[520px] md:h-[540px] lg:w-[620px] lg:h-[640px] flex items-center justify-center">
-              <div className="absolute bg-[#1C4C57] inset-0 rounded-full border-4 border-transparent animate-border-spin before:absolute before:inset-0 before:rounded-full before:border-4 before:border-[#1C4C57] before:animate-border-warp"></div>
+           {/* Animated Circle */}
+<div className="relative w-[70vw] max-w-[640px] aspect-square flex items-center justify-center mx-auto md:mx-0 relative md:ml-36 md:mr-24 md:w-[620px] md:h-[640px] ">
+  <div className="absolute bg-[#1C4C57] inset-0 rounded-full border-4 border-transparent animate-border-spin before:absolute before:inset-0 before:rounded-full before:border-4 before:border-[#1C4C57] before:animate-border-warp "></div>
 
-              <Image
-                src="/hugging.png"
-                alt="Team hugging"
-                fill
-                className="relative rounded-full object-cover mt-4 sm:mt-6"
-              />
-            </div>
+  <Image
+    src="/gola.png"
+    alt="Team hugging"
+    fill
+    className="relative rounded-full object-cover"
+  />
+</div>
 
             <style>
               {`
