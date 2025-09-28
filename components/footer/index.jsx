@@ -11,12 +11,23 @@ export default function Footer() {
         {/* Links */}
         <div>
           <h3 className="font-bold text-xl lg:text-4xl text-[#93D9E6] mb-6">Links</h3>
+          
           <ul className="space-y-3">
-            {["Home", "Our Practice", "Patient", "Sleep Dentistry", "Senior’s Dental Care", "Blog"].map((item) => (
-              <li key={item}>
-                <a href="#" className="hover:text-[#93D9E6] text-md sm:text-lg md:text-lg">
-                  {item}
-                </a>
+            {[
+              { label: "Home", slug: "/" },
+              { label: "Our Practice", slug: "our-practice" },
+              { label: "Patient", slug: "patient" },
+              { label: "Sleep Dentistry", slug: "sleep-dentistry" },
+              { label: "Senior’s Dental Care", slug: "senior-dental" },
+              { label: "Blog", slug: "/services/blog_first" },
+            ].map((item) => (
+              <li key={item.label}>
+                <Link
+                  href={item.slug}
+                  className="hover:text-[#93D9E6] text-md sm:text-lg md:text-lg"
+                >
+                  {item.label}
+                </Link>
               </li>
             ))}
           </ul>

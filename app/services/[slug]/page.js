@@ -32,7 +32,8 @@ export default function ServicePage() {
                     "children_dental": () => import('../../../components/services/children_dental'),
                     "brixsm": () => import('../../../components/services/brixsm'),
                     "bad_breath": () => import('../../../components/services/bad_breeth'),
-                    "all_on_4":()=>import('@/components/services/all_on_4')
+                    "all_on_4":()=>import('@/components/services/all_on_4'),
+                    "blog_first":()=>import("@/components/services/blogs/index")
                 };
 
                 if (slug && componentMap[slug]) {
