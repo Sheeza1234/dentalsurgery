@@ -16,7 +16,7 @@ export default function Cosmetic5({ CustomComponent }) {
       {
         title: "White Fillings",
         description:
-          "At East Bentleigh Dental Clinic, we’re proud to offer aesthetically pleasing white composite fillings. Providing a natural looking alternative to silver amalgam fillings, our composite fillings can be safely used in both front and back teeth.",
+          "At Main Street Dental Bacchus Marsh , we’re proud to offer aesthetically pleasing white composite fillings. Providing a natural looking alternative to silver amalgam fillings, our composite fillings can be safely used in both front and back teeth.",
       },
       {
         title: "Teeth Whitening – In-Chair & Take Home Kit",
